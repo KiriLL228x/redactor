@@ -522,3 +522,279 @@ Run file:	D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe
 Directory:	D:\Корнилов Кирилл\grahredator
 
 --------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 10851, функция: bool {anonymous}::TX::_txBuffer_Delete(HDC__**),
+
+Сообщение: Параметр "*dc" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F42FC (32-bit), Flags: CMdRE0, Thread: 0x2948 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0040A51B in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: _txBuffer_Delete() at c:/codeblocks/codeblocks/mingw/include/txlib.h (10851)
+# 1 0x0041618D in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: txDeleteDC() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13597)
+# 2 0x004162D9 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: txDeleteDC() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13619)
+
+# 3 0x0041D082 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: main() at D:/Корнилов Кирилл/grahredator/main.cpp (126):
+
+    124:                 for(int npic=0; npic <= 6; npic++)
+    125:             {
+=>  126:              txDeleteDC(menuPic[npic].image);
+    127:             }
+    128: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 18:40:20, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Sep 30 2022 18:40:39
+
+Run file:	D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe
+Directory:	D:\Корнилов Кирилл\grahredator
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13678, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {0, 0, 90, 90} не полностью лежит внутри изображения-источника {0, 0, 90, 40}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F42FC (32-bit), Flags: CMdRE0, Thread: 0xED0 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004169B9 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: txTransparentBlt() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13678)
+
+# 1 0x0041C937 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: drawPicture() at D:/Корнилов Кирилл/grahredator/main.cpp (43):
+
+     41: void drawPicture(Pictures pct)
+     42: {
+=>   43:   txTransparentBlt(txDC(), pct.x, pct.y, pct.w, pct.h, pct.image, 0, 0, TX_WHITE);
+     44: };
+     45: int main()
+
+# 2 0x0041D1D0 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: main() at D:/Корнилов Кирилл/grahredator/main.cpp (131):
+
+    129:             for(int npic=6; npic <= 9; npic++)
+    130:             {
+=>  131:              drawPicture(menuPic[npic]);
+    132:             }
+    133:         }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 18:57:29, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Sep 30 2022 18:57:48
+
+Run file:	D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe
+Directory:	D:\Корнилов Кирилл\grahredator
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13678, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {0, 0, 90, 90} не полностью лежит внутри изображения-источника {0, 0, 90, 40}, функция txTransparentBlt() работать не будет.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F42FC (32-bit), Flags: CMdRE0, Thread: 0xED0 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004169B9 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: txTransparentBlt() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13678)
+
+# 1 0x0041C937 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: drawPicture() at D:/Корнилов Кирилл/grahredator/main.cpp (43):
+
+     41: void drawPicture(Pictures pct)
+     42: {
+=>   43:   txTransparentBlt(txDC(), pct.x, pct.y, pct.w, pct.h, pct.image, 0, 0, TX_WHITE);
+     44: };
+     45: int main()
+
+# 2 0x0041D1D0 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: main() at D:/Корнилов Кирилл/grahredator/main.cpp (131):
+
+    129:             for(int npic=6; npic <= 9; npic++)
+    130:             {
+=>  131:              drawPicture(menuPic[npic]);
+    132:             }
+    133:         }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 18:57:29, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Sep 30 2022 18:57:48
+
+Run file:	D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe
+Directory:	D:\Корнилов Кирилл\grahredator
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13678, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {0, 0, 90, 90} не полностью лежит внутри изображения-источника {0, 0, 90, 40}, функция txTransparentBlt() работать не будет.
+
+#3: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F42FC (32-bit), Flags: CMdRE0, Thread: 0xED0 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004169B9 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: txTransparentBlt() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13678)
+
+# 1 0x0041C937 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: drawPicture() at D:/Корнилов Кирилл/grahredator/main.cpp (43):
+
+     41: void drawPicture(Pictures pct)
+     42: {
+=>   43:   txTransparentBlt(txDC(), pct.x, pct.y, pct.w, pct.h, pct.image, 0, 0, TX_WHITE);
+     44: };
+     45: int main()
+
+# 2 0x0041D1D0 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: main() at D:/Корнилов Кирилл/grahredator/main.cpp (131):
+
+    129:             for(int npic=6; npic <= 9; npic++)
+    130:             {
+=>  131:              drawPicture(menuPic[npic]);
+    132:             }
+    133:         }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 18:57:29, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Sep 30 2022 18:57:48
+
+Run file:	D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe
+Directory:	D:\Корнилов Кирилл\grahredator
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13678, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {0, 0, 90, 90} не полностью лежит внутри изображения-источника {0, 0, 90, 40}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F42FC (32-bit), Flags: CMdRE0, Thread: 0x2068 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004169B9 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: txTransparentBlt() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13678)
+
+# 1 0x0041C937 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: drawPicture() at D:/Корнилов Кирилл/grahredator/main.cpp (43):
+
+     41: void drawPicture(Pictures pct)
+     42: {
+=>   43:   txTransparentBlt(txDC(), pct.x, pct.y, pct.w, pct.h, pct.image, 0, 0, TX_WHITE);
+     44: };
+     45: int main()
+
+# 2 0x0041D1CD in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: main() at D:/Корнилов Кирилл/grahredator/main.cpp (131):
+
+    129:             for(int npic=6; npic <= 9; npic++)
+    130:             {
+=>  131:              drawPicture(menuPic[npic]);
+    132:             }
+    133:         }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 19:00:08, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Sep 30 2022 19:00:26
+
+Run file:	D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe
+Directory:	D:\Корнилов Кирилл\grahredator
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13678, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {0, 0, 90, 90} не полностью лежит внутри изображения-источника {0, 0, 90, 40}, функция txTransparentBlt() работать не будет.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F42FC (32-bit), Flags: CMdRE0, Thread: 0x2068 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004169B9 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: txTransparentBlt() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13678)
+
+# 1 0x0041C937 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: drawPicture() at D:/Корнилов Кирилл/grahredator/main.cpp (43):
+
+     41: void drawPicture(Pictures pct)
+     42: {
+=>   43:   txTransparentBlt(txDC(), pct.x, pct.y, pct.w, pct.h, pct.image, 0, 0, TX_WHITE);
+     44: };
+     45: int main()
+
+# 2 0x0041D1CD in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: main() at D:/Корнилов Кирилл/grahredator/main.cpp (131):
+
+    129:             for(int npic=6; npic <= 9; npic++)
+    130:             {
+=>  131:              drawPicture(menuPic[npic]);
+    132:             }
+    133:         }
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Sep 30 2022 19:00:08, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Sep 30 2022 19:00:27
+
+Run file:	D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe
+Directory:	D:\Корнилов Кирилл\grahredator
+
+--------------------------------------------------

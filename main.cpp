@@ -6,7 +6,7 @@ struct Pictures
     int y;
     HDC image;
     int w;
-    int h
+    int h;
 };
 //структура кнопки
 struct Button
@@ -40,7 +40,6 @@ bool click(Button btn)
 
 void drawPicture(Pictures pct)
 {
-  if(pct.visible)
   txTransparentBlt(txDC(), pct.x, pct.y, pct.w, pct.h, pct.image, 0, 0, TX_WHITE);
 };
 int main()
@@ -49,17 +48,30 @@ int main()
     txDisableAutoPause();
     txTextCursor (false);
 
-    HDC Fon2 = txLoadImage("img/Fon2.bmp");
-    HDC block1 = txLoadImage("img/Imgmenu/Wall1.bmp");
-    HDC block2 = txLoadImage("img/Imgmenu/Wall2.bmp");
-    HDC block3 = txLoadImage("img/Imgmenu/Wall3.bmp");
-    //-----------------------------------------------
-    HDC ground1 = txLoadImage("img/Imgmenu/Ground_10.bmp");
-    HDC ground2 = txLoadImage("img/Imgmenu/Ground_11.bmp");
-    HDC ground3 = txLoadImage("img/Imgmenu/Ground_12.bmp");
+    HDC Fon3 = txLoadImage("img/fon3.bmp");
+
+    //Массив
+        Button btn[10];
+        btn[0] = {30,30,"Части стен"};
+        btn[1] = {200,30,"Крыша"};
+        btn[2] = {370,30,"Земли"};
+
+        Pictures menuPic[10];
+        menuPic[0] = {1000, 400, txLoadImage("img/Imgmenu/Wall1.bmp"), 90,90};
+        menuPic[1] = {1000, 300, txLoadImage("img/Imgmenu/Wall2.bmp"), 90,90};
+        menuPic[2] = {1000, 200, txLoadImage("img/Imgmenu/Wall3.bmp"), 90,90};
+        menuPic[3] = {1000, 400, txLoadImage("img/Imgmenu/Ground_10.bmp"), 90,90};
+        menuPic[4] = {1000, 300, txLoadImage("img/Imgmenu/Ground_11.bmp"), 90,90};
+        menuPic[5] = {1000, 200, txLoadImage("img/Imgmenu/Ground_12.bmp"), 90,90};
+        menuPic[6] = {1000, 400, txLoadImage("img/Imgmenu/Roof_A_04.bmp"), 90,40};
+        menuPic[7] = {1000, 300, txLoadImage("img/Imgmenu/Roof_A_05.bmp"), 90,40};
+        menuPic[8] = {1000, 200, txLoadImage("img/Imgmenu/Roof_B_04.bmp"), 90,40};
+        menuPic[9] = {1000, 100, txLoadImage("img/Imgmenu/Roof_B_05.bmp"), 90,40};
+
 
     bool blockVisible = false;
     bool earthVisible = false;
+    bool roofVisible = false;
 
 
     while(!GetAsyncKeyState(VK_ESCAPE))
@@ -67,20 +79,7 @@ int main()
         txBegin();
         txSetColor(TX_WHITE);
         txClear();
-         txBitBlt(txDC(), 0, 0, 1200, 900, Fon2);
-    //Массив
-        Button btn[10];
-        btn[0] = {30,30,"Части стен"};
-        btn[1] = {200,30,"Крыша"};
-        btn[2] = {370,30,"Земли"};
-
-        Picture menuPic [5];
-        menuPic[0] = {1000, 400, txLoadImage("img/Imgmenu/Wall1.bmp", 90,90);
-        menuPic[1] = {1000, 300, txLoadImage("img/Imgmenu/Wall2.bmp", 90,90);
-        menuPic[2] = {1000, 200, txLoadImage("img/Imgmenu/Wall3.bmp", 90,90)};
-        menuPic[3] = {1000, 400, txLoadImage("img/Imgmenu/Ground_10.bmp", 90,90)};
-        menuPic[4] = {1000, 300, txLoadImage("img/Imgmenu/Ground_11.bmp", 90,90)};
-        menuPic[5] = {1000, 200, txLoadImage("img/Imgmenu/Ground_12.bmp", 90,90)};
+        txBitBlt(txDC(), 0, 0, 1200, 900, Fon3);
 
         //Рисование кнопок
         for(int nk=0; nk<3; nk++)
@@ -92,45 +91,59 @@ int main()
         {
             blockVisible = true;
             earthVisible = false;
+            roofVisible = false;
         }
         if(click(btn[1]))
         {
             blockVisible = false;
-            earthVisible = true;
+            earthVisible = false;
+            roofVisible = true;
         }
         if(click(btn[2]))
         {
             blockVisible = false;
             earthVisible = true;
+            roofVisible = false;
         }
+
 
         if(blockVisible)
         {
-        for(int npic=0; npic < 2; npic++
-        {
-         drawPicture(menuPicture[npic])
+            for(int npic=0; npic <= 2; npic++)
+            {
+            drawPicture(menuPic[npic]);
+            }
         }
-        }
-
 
 
         if(earthVisible)
         {
-        for(int npic=3; npic < 5; npic++
-        {
-         drawPicture(menuPicture[npic])
+            for(int npic=3; npic <= 5; npic++)
+            {
+             drawPicture(menuPic[npic]);
+            }
         }
+
+        if(roofVisible)
+        {
+            for(int npic=6; npic <= 9; npic++)
+            {
+             drawPicture(menuPic[npic]);
+            }
+        }
+
+
 
         txSleep(50);
         txEnd();
 
     }
 
+                for(int npic=0; npic <= 9; npic++)
+            {
+             txDeleteDC(menuPic[npic].image);
+            }
 
-
-    txDeleteDC(block1);
-//    txDeleteDC(block2);
- //   txDeleteDC(block3);
 
 
     return 0;
