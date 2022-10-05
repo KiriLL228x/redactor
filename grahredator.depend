@@ -1,4 +1,10 @@
 # depslib dependency file v1.0
-1663944928 source:d:\Корнилов Кирилл\grahredator\main.cpp
+1664983725 source:d:\Корнилов Кирилл\grahredator\main.cpp
+	"TXLib.h"
+
+1664981609 source:d:\Корнилов Кирилл\grahredator\button.cpp
+	"TXLib.h"
+
+1664981602 source:d:\Корнилов Кирилл\grahredator\pictures.cpp
 	"TXLib.h"
 
