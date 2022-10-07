@@ -798,3 +798,541 @@ Run file:	D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe
 Directory:	D:\Корнилов Кирилл\grahredator
 
 --------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 10851, функция: bool {anonymous}::TX::_txBuffer_Delete(HDC__**),
+
+Сообщение: Параметр "*dc" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F42FC (32-bit), Flags: CMdRE0, Thread: 0x22D0 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0040A51B in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: _txBuffer_Delete() at c:/codeblocks/codeblocks/mingw/include/txlib.h (10851)
+# 1 0x0041618D in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: txDeleteDC() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13597)
+# 2 0x004162D9 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: txDeleteDC() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13619)
+
+# 3 0x0041D16C in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: main() at D:/Корнилов Кирилл/grahredator/main.cpp (115):
+
+    113:          for(int npic=0; npic <= 9; npic++)
+    114:             {
+=>  115:              txDeleteDC(menuPic[npic].image);
+    116:             }
+    117: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Oct  7 2022 18:13:48, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Oct 07 2022 18:14:07
+
+Run file:	D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe
+Directory:	D:\Корнилов Кирилл\grahredator
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 10851, функция: bool {anonymous}::TX::_txBuffer_Delete(HDC__**),
+
+Сообщение: Параметр "*dc" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F42FC (32-bit), Flags: CMdRE0, Thread: 0x1B68 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0040A51B in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: _txBuffer_Delete() at c:/codeblocks/codeblocks/mingw/include/txlib.h (10851)
+# 1 0x0041618D in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: txDeleteDC() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13597)
+# 2 0x004162D9 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: txDeleteDC() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13619)
+
+# 3 0x0041D16C in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: main() at D:/Корнилов Кирилл/grahredator/main.cpp (115):
+
+    113:          for(int npic=0; npic <= 9; npic++)
+    114:             {
+=>  115:              txDeleteDC(menuPic[npic].image);
+    116:             }
+    117: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Oct  7 2022 18:13:48, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Oct 07 2022 18:14:27
+
+Run file:	D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe
+Directory:	D:\Корнилов Кирилл\grahredator
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 10851, функция: bool {anonymous}::TX::_txBuffer_Delete(HDC__**),
+
+Сообщение: Параметр "*dc" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F42FC (32-bit), Flags: CMdRE0, Thread: 0x21C4 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0040A51B in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: _txBuffer_Delete() at c:/codeblocks/codeblocks/mingw/include/txlib.h (10851)
+# 1 0x0041618D in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: txDeleteDC() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13597)
+# 2 0x004162D9 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: txDeleteDC() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13619)
+
+# 3 0x0041D159 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: main() at D:/Корнилов Кирилл/grahredator/main.cpp (115):
+
+    113:          for(int npic=0; npic <= 9; npic++)
+    114:             {
+=>  115:              txDeleteDC(menuPic[npic].image);
+    116:             }
+    117: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Oct  7 2022 18:15:15, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Oct 07 2022 18:15:33
+
+Run file:	D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe
+Directory:	D:\Корнилов Кирилл\grahredator
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00441E0C в функции _M_is_leaked() в файле c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x0000001A в модуле D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F52FC (32-bit), Flags: CMdRE0, Thread: 0x2650 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00441E0C in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00470ECB in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: swap() at c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x00478899 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: operator=() at c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043C73A in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: operator=() at c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041D5CE in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: main() at D:/Корнилов Кирилл/grahredator/main.cpp (81):
+
+     79:         menuPic[7] = {1000, 300, txLoadImage("img/Imgmenu/Roof_A_05.bmp"), 90,40, false,"Крыша"};
+     80:         menuPic[8] = {1000, 200, txLoadImage("img/Imgmenu/Roof_B_04.bmp"), 90,40, false,"Крыша"};
+=>   81:         menuPic[9] = {1000, 100, txLoadImage("img/Imgmenu/Roof_B_05.bmp"), 90,40, false,"Крыша"};
+     82: 
+     83: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Oct  7 2022 18:40:39, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Oct 07 2022 18:40:59
+
+Run file:	D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe
+Directory:	D:\Корнилов Кирилл\grahredator
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00441E0C в функции _M_is_leaked() в файле c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x0000001A в модуле D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F52FC (32-bit), Flags: CMdRE0, Thread: 0x2650 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00441E0C in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00470ECB in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: swap() at c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x00478899 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: operator=() at c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043C73A in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: operator=() at c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041D5CE in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: main() at D:/Корнилов Кирилл/grahredator/main.cpp (81):
+
+     79:         menuPic[7] = {1000, 300, txLoadImage("img/Imgmenu/Roof_A_05.bmp"), 90,40, false,"Крыша"};
+     80:         menuPic[8] = {1000, 200, txLoadImage("img/Imgmenu/Roof_B_04.bmp"), 90,40, false,"Крыша"};
+=>   81:         menuPic[9] = {1000, 100, txLoadImage("img/Imgmenu/Roof_B_05.bmp"), 90,40, false,"Крыша"};
+     82: 
+     83: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Oct  7 2022 18:40:39, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Oct 07 2022 18:40:58
+
+Run file:	D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe
+Directory:	D:\Корнилов Кирилл\grahredator
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 10851, функция: bool {anonymous}::TX::_txBuffer_Delete(HDC__**),
+
+Сообщение: Параметр "*dc" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F52FC (32-bit), Flags: CMdRE0, Thread: 0x728 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0040A51B in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: _txBuffer_Delete() at c:/codeblocks/codeblocks/mingw/include/txlib.h (10851)
+# 1 0x0041618D in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: txDeleteDC() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13597)
+# 2 0x004162D9 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: txDeleteDC() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13619)
+
+# 3 0x0041D85D in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: main() at D:/Корнилов Кирилл/grahredator/main.cpp (116):
+
+    114:          for(int npic=0; npic <= 9; npic++)
+    115:             {
+=>  116:              txDeleteDC(menuPic[npic].image);
+    117:             }
+    118: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Oct  7 2022 18:42:26, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Oct 07 2022 18:42:45
+
+Run file:	D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe
+Directory:	D:\Корнилов Кирилл\grahredator
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 10851, функция: bool {anonymous}::TX::_txBuffer_Delete(HDC__**),
+
+Сообщение: Параметр "*dc" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F52FC (32-bit), Flags: CMdRE0, Thread: 0x269C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0040A51B in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: _txBuffer_Delete() at c:/codeblocks/codeblocks/mingw/include/txlib.h (10851)
+# 1 0x0041618D in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: txDeleteDC() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13597)
+# 2 0x004162D9 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: txDeleteDC() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13619)
+
+# 3 0x0041D85D in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: main() at D:/Корнилов Кирилл/grahredator/main.cpp (116):
+
+    114:          for(int npic=0; npic <= 9; npic++)
+    115:             {
+=>  116:              txDeleteDC(menuPic[npic].image);
+    117:             }
+    118: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Oct  7 2022 18:43:08, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Oct 07 2022 18:43:26
+
+Run file:	D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe
+Directory:	D:\Корнилов Кирилл\grahredator
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 10851, функция: bool {anonymous}::TX::_txBuffer_Delete(HDC__**),
+
+Сообщение: Параметр "*dc" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F52FC (32-bit), Flags: CMdRE0, Thread: 0x16F0 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0040A51B in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: _txBuffer_Delete() at c:/codeblocks/codeblocks/mingw/include/txlib.h (10851)
+# 1 0x0041618D in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: txDeleteDC() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13597)
+# 2 0x004162D9 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: txDeleteDC() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13619)
+
+# 3 0x0041D85D in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: main() at D:/Корнилов Кирилл/grahredator/main.cpp (116):
+
+    114:          for(int npic=0; npic <= 9; npic++)
+    115:             {
+=>  116:              txDeleteDC(menuPic[npic].image);
+    117:             }
+    118: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Oct  7 2022 18:44:24, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Oct 07 2022 18:44:43
+
+Run file:	D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe
+Directory:	D:\Корнилов Кирилл\grahredator
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00441F5C в функции _M_is_leaked() в файле c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F52FC (32-bit), Flags: CMdRE0, Thread: 0x21A8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00441F5C in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x0047101B in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: swap() at c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x004789E9 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: operator=() at c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043C779 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: operator=() at c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041CCCC in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: main() at D:/Корнилов Кирилл/grahredator/main.cpp (70):
+
+     68:         btn[1] = {200,30,"Крыша","Крыша"};
+     69:         btn[2] = {370,30,"Земля","Земля"};
+=>   70:         btn[4] = {540,30,"Земля","Земля"};
+     71: 
+     72:         Pictures menuPic[COUNT_MENU_PIC];
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Oct  7 2022 18:52:32, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Oct 07 2022 18:52:51
+
+Run file:	D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe
+Directory:	D:\Корнилов Кирилл\grahredator
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00441F5C в функции _M_is_leaked() в файле c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F52FC (32-bit), Flags: CMdRE0, Thread: 0x21A8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00441F5C in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x0047101B in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: swap() at c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x004789E9 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: operator=() at c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043C779 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: operator=() at c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041CCCC in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: main() at D:/Корнилов Кирилл/grahredator/main.cpp (70):
+
+     68:         btn[1] = {200,30,"Крыша","Крыша"};
+     69:         btn[2] = {370,30,"Земля","Земля"};
+=>   70:         btn[4] = {540,30,"Земля","Земля"};
+     71: 
+     72:         Pictures menuPic[COUNT_MENU_PIC];
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Oct  7 2022 18:52:32, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Oct 07 2022 18:52:51
+
+Run file:	D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe
+Directory:	D:\Корнилов Кирилл\grahredator
+
+--------------------------------------------------
