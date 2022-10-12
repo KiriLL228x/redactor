@@ -60,7 +60,7 @@ int main()
     HDC Fon3 = txLoadImage("img/fon3.bmp");
 
     int COUNT_BTN = 5;
-    int COUNT_MENU_PIC = 10;
+    int COUNT_PIC = 10;
 
     //Массив
         Button btn[COUNT_BTN];
@@ -70,8 +70,8 @@ int main()
         btn[3] = {540,30,"Окна","Окна"};
         btn[4] = {710,30,"Двери","Двери"};
 
-
-        Pictures menuPic[COUNT_MENU_PIC];
+        //картинок меню
+        Pictures menuPic[COUNT_PIC];
         menuPic[0] = {1000, 400, txLoadImage("img/Imgmenu/Wall1.bmp"), 90,90, false,"Стены"};
         menuPic[1] = {1000, 300, txLoadImage("img/Imgmenu/Wall2.bmp"), 90,90, false,"Стены"};
         menuPic[2] = {1000, 200, txLoadImage("img/Imgmenu/Wall3.bmp"), 90,90, false,"Стены"};
@@ -82,6 +82,19 @@ int main()
         menuPic[7] = {1000, 300, txLoadImage("img/Imgmenu/Roof_A_05.bmp"), 90,40, false,"Крыша"};
         menuPic[8] = {1000, 200, txLoadImage("img/Imgmenu/Roof_B_04.bmp"), 90,40, false,"Крыша"};
         menuPic[9] = {1000, 100, txLoadImage("img/Imgmenu/Roof_B_05.bmp"), 90,40, false,"Крыша"};
+
+         //центральные картинки
+        Pictures centralPic[COUNT_PIC];
+        centralPic[0] = {250, 200, txLoadImage("img/Imgmenu/Wall1.bmp"), 90,90, false,"Стены"};
+        centralPic[1] = {250, 200, txLoadImage("img/Imgmenu/Wall2.bmp"), 90,90, false,"Стены"};
+        centralPic[2] = {250, 200, txLoadImage("img/Imgmenu/Wall3.bmp"), 90,90, false,"Стены"};
+        centralPic[3] = {250, 200, txLoadImage("img/Imgmenu/Ground_10.bmp"), 90,90, false,"Земля"};
+        centralPic[4] = {250, 200, txLoadImage("img/Imgmenu/Ground_11.bmp"), 90,90, false,"Земля"};
+        centralPic[5] = {250, 200, txLoadImage("img/Imgmenu/Ground_12.bmp"), 90,90, false,"Земля"};
+        centralPic[6] = {250, 200, txLoadImage("img/Imgmenu/Roof_A_04.bmp"), 90,40, false,"Крыша"};
+        centralPic[7] = {250, 200, txLoadImage("img/Imgmenu/Roof_A_05.bmp"), 90,40, false,"Крыша"};
+        centralPic[8] = {250, 200, txLoadImage("img/Imgmenu/Roof_B_04.bmp"), 90,40, false,"Крыша"};
+       centralPic[9] = {250, 200, txLoadImage("img/Imgmenu/Roof_B_05.bmp"), 90,40, false,"Крыша"};
 
 
     while(!GetAsyncKeyState(VK_ESCAPE))
@@ -96,10 +109,15 @@ int main()
         {
             drawButton(btn[nk]);
         }
-
-        for(int npic=0; npic < COUNT_MENU_PIC; npic++)
+    //рисование картинок меню
+        for(int npic=0; npic < COUNT_PIC; npic++)
         {
             drawPicture(menuPic[npic]);
+        }
+   //рисование центральных картинок
+        for(int npic=0; npic < COUNT_PIC; npic++)
+        {
+            drawPicture(centralPic[npic]);
         }
 
         //видимость картинок меню по  категории
@@ -107,7 +125,7 @@ int main()
         {
             if(click(btn[nk]))
             {
-                for(int npic=0; npic < COUNT_MENU_PIC; npic++)
+                for(int npic=0; npic < COUNT_PIC; npic++)
                 {
                     menuPic[npic].visible= false;
                     if(menuPic[npic].category == btn[nk].category)
@@ -117,6 +135,28 @@ int main()
                 }
             }
         }
+
+        //видимость центральных картинок по  категории
+       for(int npic=0; npic < COUNT_PIC; npic++)
+        {
+          if( txMouseButtons() == 1 &&
+           txMouseX()>=menuPic[npic].x &&
+           txMouseX()<=menuPic[npic].x + menuPic[npic].w &&
+           txMouseY()>=menuPic[npic].y &&
+           txMouseY()<=menuPic[npic].y + menuPic[npic].h)
+             {
+                 for(int npicl=0; npicl < COUNT_PIC; npicl++)
+                 {
+                     if(centralPic[npicl].category == centralPic[npic].category)
+                     {
+                        centralPic[npicl].visible = false;
+                     }
+                 }
+                centralPic[npic].visible = !centralPic[npic].visible;
+                txSleep(100);
+             }
+         }
+
 
 
 
@@ -128,11 +168,15 @@ int main()
 
     }
 
-            for(int npic=0; npic < COUNT_MENU_PIC; npic++)
+            for(int npic=0; npic < COUNT_PIC; npic++)
             {
                 txDeleteDC(menuPic[npic].image);
             }
 
+            for(int npic=0; npic < COUNT_PIC; npic++)
+            {
+                txDeleteDC(centralPic[npic].image);
+            }
 
 
     return 0;
