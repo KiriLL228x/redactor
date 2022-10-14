@@ -7,6 +7,8 @@ struct Pictures
     HDC image;
     int w;
     int h;
+    int w_scr;
+    int h_scr;
     bool visible;
     string category;
 };
@@ -46,7 +48,7 @@ void drawPicture(Pictures pct)
 {
 if(pct.visible)
 {
-    txTransparentBlt(txDC(), pct.x, pct.y, pct.w, pct.h, pct.image, 0, 0, TX_WHITE);
+    Win32::TransparentBlt(txDC(), pct.x, pct.y, pct.w_scr, pct.h_scr, pct.image, 0, 0, pct.w, pct.h, TX_WHITE);
 }
 
 };
@@ -72,29 +74,29 @@ int main()
 
         //картинок меню
         Pictures menuPic[COUNT_PIC];
-        menuPic[0] = {1000, 400, txLoadImage("img/Imgmenu/Wall1.bmp"), 90,90, false,"Стены"};
-        menuPic[1] = {1000, 300, txLoadImage("img/Imgmenu/Wall2.bmp"), 90,90, false,"Стены"};
-        menuPic[2] = {1000, 200, txLoadImage("img/Imgmenu/Wall3.bmp"), 90,90, false,"Стены"};
-        menuPic[3] = {1000, 400, txLoadImage("img/Imgmenu/Ground_10.bmp"), 90,90, false,"Земля"};
-        menuPic[4] = {1000, 300, txLoadImage("img/Imgmenu/Ground_11.bmp"), 90,90, false,"Земля"};
-        menuPic[5] = {1000, 200, txLoadImage("img/Imgmenu/Ground_12.bmp"), 90,90, false,"Земля"};
-        menuPic[6] = {1000, 400, txLoadImage("img/Imgmenu/Roof_A_04.bmp"), 90,40, false,"Крыша"};
-        menuPic[7] = {1000, 300, txLoadImage("img/Imgmenu/Roof_A_05.bmp"), 90,40, false,"Крыша"};
-        menuPic[8] = {1000, 200, txLoadImage("img/Imgmenu/Roof_B_04.bmp"), 90,40, false,"Крыша"};
-        menuPic[9] = {1000, 100, txLoadImage("img/Imgmenu/Roof_B_05.bmp"), 90,40, false,"Крыша"};
+        menuPic[0] = {1000, 400, txLoadImage("img/Building/Wall_A_02.bmp"), 320, 320, 90,90, false,"Стены"};
+        menuPic[1] = {1000, 300, txLoadImage("img/Building/Wall_B_02.bmp"), 320, 320, 90,90, false,"Стены"};
+        menuPic[2] = {1000, 200, txLoadImage("img/Building/Wall_C_02.bmp"), 320, 320, 90,90, false,"Стены"};
+        menuPic[3] = {1000, 400, txLoadImage("img/Platformer/Ground_10.bmp"), 128, 128, 90,90, false,"Земля"};
+        menuPic[4] = {1000, 300, txLoadImage("img/Platformer/Ground_11.bmp"), 128, 128, 90,90, false,"Земля"};
+        menuPic[5] = {1000, 200, txLoadImage("img/Platformer/Ground_12.bmp"), 128, 128, 90,90, false,"Земля"};
+        menuPic[6] = {1000, 400, txLoadImage("img/Building/Roof_A_04.bmp"), 352, 160, 90,40, false,"Крыша"};
+        menuPic[7] = {1000, 300, txLoadImage("img/Building/Roof_A_05.bmp"), 352, 160, 90,40, false,"Крыша"};
+        menuPic[8] = {1000, 200, txLoadImage("img/Building/Roof_B_04.bmp"), 352, 160, 90,40, false,"Крыша"};
+        menuPic[9] = {1000, 100, txLoadImage("img/Building/Roof_B_05.bmp"), 352, 160, 90,40, false,"Крыша"};
 
          //центральные картинки
         Pictures centralPic[COUNT_PIC];
-        centralPic[0] = {250, 200, txLoadImage("img/Imgmenu/Wall1.bmp"), 90,90, false,"Стены"};
-        centralPic[1] = {250, 200, txLoadImage("img/Imgmenu/Wall2.bmp"), 90,90, false,"Стены"};
-        centralPic[2] = {250, 200, txLoadImage("img/Imgmenu/Wall3.bmp"), 90,90, false,"Стены"};
-        centralPic[3] = {250, 200, txLoadImage("img/Imgmenu/Ground_10.bmp"), 90,90, false,"Земля"};
-        centralPic[4] = {250, 200, txLoadImage("img/Imgmenu/Ground_11.bmp"), 90,90, false,"Земля"};
-        centralPic[5] = {250, 200, txLoadImage("img/Imgmenu/Ground_12.bmp"), 90,90, false,"Земля"};
-        centralPic[6] = {250, 200, txLoadImage("img/Imgmenu/Roof_A_04.bmp"), 90,40, false,"Крыша"};
-        centralPic[7] = {250, 200, txLoadImage("img/Imgmenu/Roof_A_05.bmp"), 90,40, false,"Крыша"};
-        centralPic[8] = {250, 200, txLoadImage("img/Imgmenu/Roof_B_04.bmp"), 90,40, false,"Крыша"};
-       centralPic[9] = {250, 200, txLoadImage("img/Imgmenu/Roof_B_05.bmp"), 90,40, false,"Крыша"};
+        centralPic[0] = {250, 200, txLoadImage("img/Building/Wall_A_02.bmp"), 320, 320, 320, 320, false,"Стены"};
+        centralPic[1] = {250, 200, txLoadImage("img/Building/Wall_B_02.bmp"), 320, 320, 320, 320, false,"Стены"};
+        centralPic[2] = {250, 200, txLoadImage("img/Building/Wall_C_02.bmp"), 320, 320, 320, 320, false,"Стены"};
+        centralPic[3] = {250, 200, txLoadImage("img/Platformer/Ground_10.bmp"), 128, 128, 128, 128, false,"Земля"};
+        centralPic[4] = {250, 200, txLoadImage("img/Platformer/Ground_11.bmp"), 128, 128, 128, 128, false,"Земля"};
+        centralPic[5] = {250, 200, txLoadImage("img/Platformer/Ground_12.bmp"), 128, 128, 128, 128, false,"Земля"};
+        centralPic[6] = {250, 200, txLoadImage("img/Building/Roof_A_04.bmp"), 352, 160, 352, 160, false,"Крыша"};
+        centralPic[7] = {250, 200, txLoadImage("img/Building/Roof_A_05.bmp"), 352, 160, 352, 160, false,"Крыша"};
+        centralPic[8] = {250, 200, txLoadImage("img/Building/Roof_B_04.bmp"), 352, 160, 352, 160, false,"Крыша"};
+       centralPic[9] = {250, 200, txLoadImage("img/Building/Roof_B_05.bmp"), 352, 160, 352, 160, false,"Крыша"};
 
 
     while(!GetAsyncKeyState(VK_ESCAPE))
