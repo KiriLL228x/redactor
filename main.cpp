@@ -62,7 +62,7 @@ int main()
     HDC Fon3 = txLoadImage("img/fon3.bmp");
 
     int COUNT_BTN = 5;
-    int COUNT_PIC = 10;
+    int COUNT_PIC = 17;
 
     //Массив
         Button btn[COUNT_BTN];
@@ -84,6 +84,13 @@ int main()
         menuPic[7] = {1000, 300, txLoadImage("img/Building/Roof_A_05.bmp"), 352, 160, 90,40, false,"Крыша"};
         menuPic[8] = {1000, 200, txLoadImage("img/Building/Roof_B_04.bmp"), 352, 160, 90,40, false,"Крыша"};
         menuPic[9] = {1000, 100, txLoadImage("img/Building/Roof_B_05.bmp"), 352, 160, 90,40, false,"Крыша"};
+        menuPic[10] = {1000, 400, txLoadImage("img/Building/Window_01.bmp"), 128, 128, 64,64, false,"Окна"};
+        menuPic[11] = {1000, 300, txLoadImage("img/Building/Window_02.bmp"), 128, 128, 64,64, false,"Окна"};
+        menuPic[12] = {1000, 200, txLoadImage("img/Building/Window_03.bmp"), 128, 128, 64,64, false,"Окна"};
+        menuPic[13] = {1000, 100, txLoadImage("img/Building/Door_01.bmp"), 128, 256, 64,128, false,"Двери"};
+        menuPic[14] = {1000, 250, txLoadImage("img/Building/Door_02.bmp"), 128, 256, 64,128, false,"Двери"};
+        menuPic[15] = {1000, 400, txLoadImage("img/Building/Door_03.bmp"), 128, 256, 64,128, false,"Двери"};
+        menuPic[16] = {1000, 550, txLoadImage("img/Building/Door_04.bmp"), 128, 256, 64,128, false,"Двери"};
 
          //центральные картинки
         Pictures centralPic[COUNT_PIC];
@@ -96,8 +103,14 @@ int main()
         centralPic[6] = {250, 200, txLoadImage("img/Building/Roof_A_04.bmp"), 352, 160, 352, 160, false,"Крыша"};
         centralPic[7] = {250, 200, txLoadImage("img/Building/Roof_A_05.bmp"), 352, 160, 352, 160, false,"Крыша"};
         centralPic[8] = {250, 200, txLoadImage("img/Building/Roof_B_04.bmp"), 352, 160, 352, 160, false,"Крыша"};
-       centralPic[9] = {250, 200, txLoadImage("img/Building/Roof_B_05.bmp"), 352, 160, 352, 160, false,"Крыша"};
-
+        centralPic[9] = {250, 200, txLoadImage("img/Building/Roof_B_05.bmp"), 352, 160, 352, 160, false,"Крыша"};
+        centralPic[10] = {250, 200, txLoadImage("img/Building/Window_01.bmp"), 128, 128, 128,128, false,"Окна"};
+        centralPic[11] = {250, 200, txLoadImage("img/Building/Window_02.bmp"), 128, 128, 128,128, false,"Окна"};
+        centralPic[12] = {250, 200, txLoadImage("img/Building/Window_03.bmp"), 128, 128, 128,128, false,"Окна"};
+        centralPic[13] = {250, 200, txLoadImage("img/Building/Door_01.bmp"), 128, 256, 128,256, false,"Двери"};
+        centralPic[14] = {250, 200, txLoadImage("img/Building/Door_02.bmp"), 128, 256, 128,256, false,"Двери"};
+        centralPic[15] = {250, 200, txLoadImage("img/Building/Door_03.bmp"), 128, 256, 128,256, false,"Двери"};
+        centralPic[16] = {250, 200, txLoadImage("img/Building/Door_04.bmp"), 128, 256, 128,256, false,"Двери"};
 
     while(!GetAsyncKeyState(VK_ESCAPE))
     {
@@ -142,10 +155,11 @@ int main()
        for(int npic=0; npic < COUNT_PIC; npic++)
         {
           if( txMouseButtons() == 1 &&
+           menuPic[npic].visible &&
            txMouseX()>=menuPic[npic].x &&
-           txMouseX()<=menuPic[npic].x + menuPic[npic].w &&
+           txMouseX()<=menuPic[npic].x + menuPic[npic].w_scr &&
            txMouseY()>=menuPic[npic].y &&
-           txMouseY()<=menuPic[npic].y + menuPic[npic].h)
+           txMouseY()<=menuPic[npic].y + menuPic[npic].h_scr)
              {
                  for(int npicl=0; npicl < COUNT_PIC; npicl++)
                  {
