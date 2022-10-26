@@ -59,10 +59,12 @@ int main()
     txDisableAutoPause();
     txTextCursor (false);
 
-    HDC Fon3 = txLoadImage("img/fon3.bmp");
+  //  HDC Fon3 = txLoadImage("img/fon3.bmp");
 
     int COUNT_BTN = 5;
     int COUNT_PIC = 17;
+    int vybor = -1;
+    bool mouse_free = false;
 
     //ћассив
         Button btn[COUNT_BTN];
@@ -117,7 +119,7 @@ int main()
         txBegin();
         txSetColor(TX_WHITE);
         txClear();
-        txBitBlt(txDC(), 0, 0, 1200, 900, Fon3);
+    //    txBitBlt(txDC(), 0, 0, 1200, 900, Fon3);
 
         //–исование кнопок
         for(int nk=0; nk<5; nk++)
@@ -174,9 +176,45 @@ int main()
          }
 
 
+     //выбор центральных картинок
+      for(int npic=0; npic < COUNT_PIC; npic++)
+        {
+          if( txMouseButtons() == 1 &&
+           menuPic[npic].visible &&
+           txMouseX()>=centralPic[npic].x &&
+           txMouseX()<=centralPic[npic].x + centralPic[npic].w &&
+           txMouseY()>=centralPic[npic].y &&
+           txMouseY()<=centralPic[npic].y + centralPic[npic].h)
+             {
+               vybor=npic;
+               mouse_free = false;
+             }
+        }
 
+    // передвижение выбраной центральной картинки
+        if(vybor>0)
+        {
+          if(GetAsyncKeyState(VK_RIGHT)) centralPic[vybor].x += 3;
+          if(GetAsyncKeyState(VK_LEFT)) centralPic[vybor].x -= 3;
+          if(GetAsyncKeyState(VK_UP)) centralPic[vybor].y -= 3;
+          if(GetAsyncKeyState(VK_DOWN)) centralPic[vybor].y += 3;
+        }
 
-
+        if(vybor=>0)
+        {
+              if(txMouseButtons() == 1 && !mouse_free)
+                {
+                    centralPic[vybor].x = txMouseX() - centralPic[vybor].w/2;
+                    centralPic[vybor].y = txMouseY() - centralPic[vybor].h/2;
+                }
+                      else
+                        {
+                            if(txMouseButtons() != 1)
+                            {
+                                mouse_free = true;
+                            }
+                        }
+        }
 
 
         txSleep(50);
