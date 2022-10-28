@@ -59,11 +59,13 @@ int main()
     txDisableAutoPause();
     txTextCursor (false);
 
-  //  HDC Fon3 = txLoadImage("img/fon3.bmp");
+    HDC Fon3 = txLoadImage("img/fon3.bmp");
 
     int COUNT_BTN = 5;
     int COUNT_PIC = 17;
     int vybor = -1;
+    int nCentralPic = 0;
+
     bool mouse_free = false;
 
     //Массив
@@ -95,31 +97,15 @@ int main()
         menuPic[16] = {1000, 550, txLoadImage("img/Building/Door_04.bmp"), 128, 256, 64,128, false,"Двери"};
 
          //центральные картинки
-        Pictures centralPic[COUNT_PIC];
-        centralPic[0] = {250, 200, txLoadImage("img/Building/Wall_A_02.bmp"), 320, 320, 320, 320, false,"Стены"};
-        centralPic[1] = {250, 200, txLoadImage("img/Building/Wall_B_02.bmp"), 320, 320, 320, 320, false,"Стены"};
-        centralPic[2] = {250, 200, txLoadImage("img/Building/Wall_C_02.bmp"), 320, 320, 320, 320, false,"Стены"};
-        centralPic[3] = {250, 200, txLoadImage("img/Platformer/Ground_10.bmp"), 128, 128, 128, 128, false,"Земля"};
-        centralPic[4] = {250, 200, txLoadImage("img/Platformer/Ground_11.bmp"), 128, 128, 128, 128, false,"Земля"};
-        centralPic[5] = {250, 200, txLoadImage("img/Platformer/Ground_12.bmp"), 128, 128, 128, 128, false,"Земля"};
-        centralPic[6] = {250, 200, txLoadImage("img/Building/Roof_A_04.bmp"), 352, 160, 352, 160, false,"Крыша"};
-        centralPic[7] = {250, 200, txLoadImage("img/Building/Roof_A_05.bmp"), 352, 160, 352, 160, false,"Крыша"};
-        centralPic[8] = {250, 200, txLoadImage("img/Building/Roof_B_04.bmp"), 352, 160, 352, 160, false,"Крыша"};
-        centralPic[9] = {250, 200, txLoadImage("img/Building/Roof_B_05.bmp"), 352, 160, 352, 160, false,"Крыша"};
-        centralPic[10] = {250, 200, txLoadImage("img/Building/Window_01.bmp"), 128, 128, 128,128, false,"Окна"};
-        centralPic[11] = {250, 200, txLoadImage("img/Building/Window_02.bmp"), 128, 128, 128,128, false,"Окна"};
-        centralPic[12] = {250, 200, txLoadImage("img/Building/Window_03.bmp"), 128, 128, 128,128, false,"Окна"};
-        centralPic[13] = {250, 200, txLoadImage("img/Building/Door_01.bmp"), 128, 256, 128,256, false,"Двери"};
-        centralPic[14] = {250, 200, txLoadImage("img/Building/Door_02.bmp"), 128, 256, 128,256, false,"Двери"};
-        centralPic[15] = {250, 200, txLoadImage("img/Building/Door_03.bmp"), 128, 256, 128,256, false,"Двери"};
-        centralPic[16] = {250, 200, txLoadImage("img/Building/Door_04.bmp"), 128, 256, 128,256, false,"Двери"};
+        Pictures centralPic[1000];
+
 
     while(!GetAsyncKeyState(VK_ESCAPE))
     {
         txBegin();
         txSetColor(TX_WHITE);
         txClear();
-    //    txBitBlt(txDC(), 0, 0, 1200, 900, Fon3);
+        txBitBlt(txDC(), 0, 0, 1200, 900, Fon3);
 
         //Рисование кнопок
         for(int nk=0; nk<5; nk++)
@@ -163,24 +149,30 @@ int main()
            txMouseY()>=menuPic[npic].y &&
            txMouseY()<=menuPic[npic].y + menuPic[npic].h_scr)
              {
-                 for(int npicl=0; npicl < COUNT_PIC; npicl++)
-                 {
-                     if(centralPic[npicl].category == centralPic[npic].category)
-                     {
-                        centralPic[npicl].visible = false;
-                     }
-                 }
-                centralPic[npic].visible = !centralPic[npic].visible;
-                txSleep(100);
+                    centralPic[nCentralPic] = { 250,
+                                                200,
+                                                menuPic[npic].image,
+                                                menuPic[npic].w,
+                                                menuPic[npic].h,
+                                                menuPic[npic].w,
+                                                menuPic[npic].h,
+                                                menuPic[npic].visible,
+                                                menuPic[npic].category
+                                              };
+                   nCentralPic++;
              }
          }
+    //проверка отжатия
+    while(txMouseButtons() == 1)
+    {
+      txSleep(10);
 
-
+    }
      //выбор центральных картинок
       for(int npic=0; npic < COUNT_PIC; npic++)
         {
           if( txMouseButtons() == 1 &&
-           menuPic[npic].visible &&
+           centralPic[npic].visible &&
            txMouseX()>=centralPic[npic].x &&
            txMouseX()<=centralPic[npic].x + centralPic[npic].w &&
            txMouseY()>=centralPic[npic].y &&
@@ -200,7 +192,7 @@ int main()
           if(GetAsyncKeyState(VK_DOWN)) centralPic[vybor].y += 3;
         }
 
-        if(vybor=>0)
+        if(vybor>=0)
         {
               if(txMouseButtons() == 1 && !mouse_free)
                 {
@@ -227,10 +219,6 @@ int main()
                 txDeleteDC(menuPic[npic].image);
             }
 
-            for(int npic=0; npic < COUNT_PIC; npic++)
-            {
-                txDeleteDC(centralPic[npic].image);
-            }
 
 
     return 0;
