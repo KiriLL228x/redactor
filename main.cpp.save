@@ -6,7 +6,11 @@ struct Pictures
     int y;
     HDC image;
     int w;
-    int h
+    int h;
+    int w_scr;
+    int h_scr;
+    bool visible;
+    string category;
 };
 //структура кнопки
 struct Button
@@ -14,8 +18,10 @@ struct Button
   int x;
   int y;
   const char* text;
+  string category;
 };
 //функция рисования кнопки
+
 void drawButton(Button btn)
 {
     //x=30 y=30
@@ -40,26 +46,94 @@ bool click(Button btn)
 
 void drawPicture(Pictures pct)
 {
-  if(pct.visible)
-  txTransparentBlt(txDC(), pct.x, pct.y, pct.w, pct.h, pct.image, 0, 0, TX_WHITE);
+if(pct.visible)
+{
+    Win32::TransparentBlt(txDC(), pct.x, pct.y, pct.w_scr, pct.h_scr, pct.image, 0, 0, pct.w, pct.h, TX_WHITE);
+}
+
 };
+
 int main()
 {
     txCreateWindow (1200, 800);
     txDisableAutoPause();
     txTextCursor (false);
 
-    HDC Fon2 = txLoadImage("img/Fon2.bmp");
-    HDC block1 = txLoadImage("img/Imgmenu/Wall1.bmp");
-    HDC block2 = txLoadImage("img/Imgmenu/Wall2.bmp");
-    HDC block3 = txLoadImage("img/Imgmenu/Wall3.bmp");
-    //-----------------------------------------------
-    HDC ground1 = txLoadImage("img/Imgmenu/Ground_10.bmp");
-    HDC ground2 = txLoadImage("img/Imgmenu/Ground_11.bmp");
-    HDC ground3 = txLoadImage("img/Imgmenu/Ground_12.bmp");
+    HDC Fon3 = txLoadImage("img/fon3.bmp");
 
-    bool blockVisible = false;
-    bool earthVisible = false;
+    int COUNT_BTN = 6;
+    int COUNT_PIC = 45;
+    int vybor = -1;
+    int nCentralPic = 0;
+    bool mouse_free = false;
+
+    //Массив
+        Button btn[COUNT_BTN];
+        btn[0] = {30,30,"Части стен","Стены"};
+        btn[1] = {200,30,"Крыша","Крыша"};
+        btn[2] = {370,30,"Земля","Земля"};
+        btn[3] = {540,30,"Окна","Окна"};
+        btn[4] = {710,30,"Двери","Двери"};
+        btn[5] = {880,30,"Декор","Декор"};
+
+        //картинок меню
+        Pictures menuPic[COUNT_PIC];
+        menuPic[0] = {900, 100, txLoadImage("img/Building/Wall_A_02.bmp"),   320,320, 90,90, false,"Стены"};
+        menuPic[1] = {900, 200, txLoadImage("img/Building/Wall_B_02.bmp"),   320,320, 90,90, false,"Стены"};
+        menuPic[2] = {900, 300, txLoadImage("img/Building/Wall_C_02.bmp"),   320,320, 90,90, false,"Стены"};
+        menuPic[3] = {860, 100, txLoadImage("img/Building/Wall_A_01.bmp"),   128,320, 32,80, false,"Стены"};
+        menuPic[4] = {1000, 100, txLoadImage("img/Building/Wall_A_03.bmp"),  128,320, 32,80, false,"Стены"};
+        menuPic[5] = {860, 200, txLoadImage("img/Building/Wall_B_01.bmp"),   128,320, 32,80, false,"Стены"};
+        menuPic[6] = {1000, 200, txLoadImage("img/Building/Wall_B_03.bmp"),  128,320, 32,80, false,"Стены"};
+        menuPic[7] = {860, 300, txLoadImage("img/Building/Wall_C_01.bmp"),   128,320, 32,80, false,"Стены"};
+        menuPic[8] = {1000, 300, txLoadImage("img/Building/Wall_C_03.bmp"),  128,320, 32,80, false,"Стены"};
+
+        menuPic[9] = {930, 100, txLoadImage("img/Building/Roof_A_01.bmp"),   128,160, 64,80, false,"Крыша"};
+        menuPic[10] = {1000, 100, txLoadImage("img/Building/Roof_A_02.bmp"), 128,160, 64,80, false,"Крыша"};
+        menuPic[11] = {1070, 100, txLoadImage("img/Building/Roof_A_03.bmp"), 128,160, 64,80, false,"Крыша"};
+        menuPic[12] = {1050, 200, txLoadImage("img/Building/Roof_A_04.bmp"), 352,160, 90,40, false,"Крыша"};
+        menuPic[13] = {950, 200, txLoadImage("img/Building/Roof_A_05.bmp"),  352,160, 90,40, false,"Крыша"};
+        menuPic[14] = {930, 300, txLoadImage("img/Building/Roof_B_01.bmp"),  128,160, 64,80, false,"Крыша"};
+        menuPic[15] = {1000, 300, txLoadImage("img/Building/Roof_B_02.bmp"), 128,160, 64,80, false,"Крыша"};
+        menuPic[16] = {1070, 300, txLoadImage("img/Building/Roof_B_03.bmp"), 128,160, 64,80, false,"Крыша"};
+        menuPic[17] = {1050, 400, txLoadImage("img/Building/Roof_B_04.bmp"), 352,160, 90,40, false,"Крыша"};
+        menuPic[18] = {950, 400, txLoadImage("img/Building/Roof_B_05.bmp"),  352,160, 90,40, false,"Крыша"};
+
+
+        menuPic[19] = {900, 100, txLoadImage("img/Building/Window_01.bmp"),        128,128, 64,64, false,"Окна"};
+        menuPic[20] = {900, 200, txLoadImage("img/Building/Window_02.bmp"),        128,128, 64,64, false,"Окна"};
+        menuPic[21] = {900, 300, txLoadImage("img/Building/Window_03.bmp"),        128,128, 64,64, false,"Окна"};
+        menuPic[22] = {1050, 100, txLoadImage("img/Building/Stone_Window_01.bmp"), 160,160, 80,80, false,"Окна"};
+        menuPic[23] = {1050, 200, txLoadImage("img/Building/Stone_Window_02.bmp"), 160,160, 80,80, false,"Окна"};
+        menuPic[24] = {1050, 300, txLoadImage("img/Building/Stone_Window_03.bmp"), 160,160, 80,80, false,"Окна"};
+
+        menuPic[25] = {900, 100, txLoadImage("img/Building/Door_01.bmp"),          128,256, 64,128, false,"Двери"};
+        menuPic[26] = {900, 250, txLoadImage("img/Building/Door_02.bmp"),          128,256, 64,128, false,"Двери"};
+        menuPic[27] = {900, 400, txLoadImage("img/Building/Door_03.bmp"),          128,256, 64,128, false,"Двери"};
+        menuPic[28] = {900, 550, txLoadImage("img/Building/Door_04.bmp"),          128,256, 64,128, false,"Двери"};
+        menuPic[29] = {1050, 100, txLoadImage("img/Building/Wide_Door_01.bmp"),    256,256, 128,128, false,"Двери"};
+        menuPic[30] = {1050, 250, txLoadImage("img/Building/Wide_Door_02.bmp"),    256,256, 128,128, false,"Двери"};
+        menuPic[31] = {1050, 400, txLoadImage("img/Building/Wide_Door_03.bmp"),    256,256, 128,128, false,"Двери"};
+        menuPic[32] = {1050, 550, txLoadImage("img/Building/Wide_Door_04.bmp"),    256,256, 128,128, false,"Двери"};
+
+        menuPic[33] = {900, 100, txLoadImage("img/Platformer/Ground_10.bmp"),  128,128, 90,90, false,"Земля"};
+        menuPic[34] = {900, 200, txLoadImage("img/Platformer/Ground_11.bmp"),  128,128, 90,90, false,"Земля"};
+        menuPic[35] = {900, 300, txLoadImage("img/Platformer/Ground_12.bmp"),  128,128, 90,90, false,"Земля"};
+        menuPic[36] = {900, 400, txLoadImage("img/Platformer/Ground_01.bmp"),  128,128, 90,90, false,"Земля"};
+        menuPic[37] = {1050, 100, txLoadImage("img/Platformer/Ground_02.bmp"), 128,128, 90,90, false,"Земля"};
+        menuPic[38] = {1050, 200, txLoadImage("img/Platformer/Ground_03.bmp"), 128,128, 90,90, false,"Земля"};
+        menuPic[39] = {1050, 300, txLoadImage("img/Platformer/Ground_06.bmp"), 128,128, 90,90, false,"Земля"};
+        
+        menuPic[40] = {900, 100, txLoadImage("img/Environment/Wooden_Barrel.bmp"), 128,128, 64,64, false,"Декор"};
+        menuPic[41] = {900, 200, txLoadImage("img/Environment/Wooden_Crate.bmp"),  128,128, 90,90, false,"Декор"};
+        menuPic[42] = {900, 300, txLoadImage("img/Environment/Well.bmp"),          128,128, 90,90, false,"Декор"};
+        menuPic[43] = {900, 400, txLoadImage("img/Environment/Street_Lantern.bmp"),128,128, 90,90, false,"Декор"};
+        menuPic[44] = {900, 500, txLoadImage("img/Environment/Decor_Cart.bmp"),    128,128, 90,90, false,"Декор"};
+       
+    
+
+         //центральные картинки
+        Pictures centralPic[1000];
 
 
     while(!GetAsyncKeyState(VK_ESCAPE))
@@ -67,70 +141,116 @@ int main()
         txBegin();
         txSetColor(TX_WHITE);
         txClear();
-         txBitBlt(txDC(), 0, 0, 1200, 900, Fon2);
-    //Массив
-        Button btn[10];
-        btn[0] = {30,30,"Части стен"};
-        btn[1] = {200,30,"Крыша"};
-        btn[2] = {370,30,"Земли"};
-
-        Picture menuPic [5];
-        menuPic[0] = {1000, 400, txLoadImage("img/Imgmenu/Wall1.bmp", 90,90);
-        menuPic[1] = {1000, 300, txLoadImage("img/Imgmenu/Wall2.bmp", 90,90);
-        menuPic[2] = {1000, 200, txLoadImage("img/Imgmenu/Wall3.bmp", 90,90)};
-        menuPic[3] = {1000, 400, txLoadImage("img/Imgmenu/Ground_10.bmp", 90,90)};
-        menuPic[4] = {1000, 300, txLoadImage("img/Imgmenu/Ground_11.bmp", 90,90)};
-        menuPic[5] = {1000, 200, txLoadImage("img/Imgmenu/Ground_12.bmp", 90,90)};
+        txBitBlt(txDC(), 0, 0, 1200, 900, Fon3);
 
         //Рисование кнопок
-        for(int nk=0; nk<3; nk++)
+        for(int nk=0; nk<5; nk++)
         {
             drawButton(btn[nk]);
         }
-
-        if(click(btn[0]))
+    //рисование картинок меню
+        for(int npic=0; npic < COUNT_PIC; npic++)
         {
-            blockVisible = true;
-            earthVisible = false;
+            drawPicture(menuPic[npic]);
         }
-        if(click(btn[1]))
+   //рисование центральных картинок
+        for(int npic=0; npic < nCentralPic; npic++)
         {
-            blockVisible = false;
-            earthVisible = true;
-        }
-        if(click(btn[2]))
-        {
-            blockVisible = false;
-            earthVisible = true;
+            drawPicture(centralPic[npic]);
         }
 
-        if(blockVisible)
+        //видимость картинок меню по  категории
+        for(int nk=0; nk<5; nk++)
         {
-        for(int npic=0; npic < 2; npic++
-        {
-         drawPicture(menuPicture[npic])
+            if(click(btn[nk]))
+            {
+                for(int npic=0; npic < COUNT_PIC; npic++)
+                {
+                    menuPic[npic].visible= false;
+                    if(menuPic[npic].category == btn[nk].category)
+                    {
+                        menuPic[npic].visible=true;
+                    }
+                }
+            }
         }
+
+             //видимость центральных картинок по  категории
+     for(int npic=0; npic < COUNT_PIC; npic++)
+        {
+          if( txMouseButtons() == 1 &&
+           menuPic[npic].visible &&
+           txMouseX()>=menuPic[npic].x &&
+           txMouseX()<=menuPic[npic].x + menuPic[npic].w_scr &&
+           txMouseY()>=menuPic[npic].y &&
+           txMouseY()<=menuPic[npic].y + menuPic[npic].h_scr)
+             {
+                while(txMouseButtons() == 1)
+                {
+                    txSleep(10);
+                }
+                centralPic[nCentralPic] = { 250,
+                                            200,
+                                            menuPic[npic].image,
+                                            menuPic[npic].w,
+                                            menuPic[npic].h,
+                                            menuPic[npic].w,
+                                            menuPic[npic].h,
+                                            menuPic[npic].visible,
+                                            menuPic[npic].category
+                                          };
+                nCentralPic++;
+             }
+         }
+
+
+        //выбор центральных картинок
+        for(int npic=0; npic < COUNT_PIC; npic++)
+        {
+          if(  txMouseButtons() == 1 &&
+               centralPic[npic].visible &&
+               txMouseX()>=centralPic[npic].x &&
+               txMouseX()<=centralPic[npic].x + centralPic[npic].w &&
+               txMouseY()>=centralPic[npic].y &&
+               txMouseY()<=centralPic[npic].y + centralPic[npic].h)
+             {
+               vybor=npic;
+               mouse_free = false;
+             }
+        }
+
+
+        // передвижение выбраной центральной картинки
+       if(vybor>=0)
+        {
+          if(GetAsyncKeyState(VK_RIGHT)) centralPic[vybor].x += 5;
+          if(GetAsyncKeyState(VK_LEFT)) centralPic[vybor].x -= 5;
+          if(GetAsyncKeyState(VK_UP)) centralPic[vybor].y -= 5;
+          if(GetAsyncKeyState(VK_DOWN)) centralPic[vybor].y += 5;
         }
 
 
 
-        if(earthVisible)
+        // Удаление центральной картинки с экрана
+        if(vybor>=0 && GetAsyncKeyState(VK_DELETE))
         {
-        for(int npic=3; npic < 5; npic++
-        {
-         drawPicture(menuPicture[npic])
+            centralPic[vybor] = centralPic[nCentralPic - 1];
+            nCentralPic--;
+            vybor=-1;
+            mouse_free = true;
         }
+
 
         txSleep(50);
         txEnd();
 
-    }
+        }
 
+            for(int npic=0; npic < COUNT_PIC; npic++)
+            {
+                txDeleteDC(menuPic[npic].image);
+            }
 
-
-    txDeleteDC(block1);
-//    txDeleteDC(block2);
- //   txDeleteDC(block3);
 
 
     return 0;

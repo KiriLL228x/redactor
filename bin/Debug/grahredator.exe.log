@@ -1806,3 +1806,2467 @@ Run file:	D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe
 Directory:	D:\Корнилов Кирилл\grahredator
 
 --------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13628, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F62FC (32-bit), Flags: CMdRE0, Thread: 0x20 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00416409 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: txBitBlt() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13628)
+# 1 0x0041DFCB in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at D:/Корнилов Кирилл/grahredator/main.cpp (108)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 28 2022 19:27:36, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 02 2022 18:13:53
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13628, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F62FC (32-bit), Flags: CMdRE0, Thread: 0x2174 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00416409 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: txBitBlt() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13628)
+# 1 0x0041DFCB in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at D:/Корнилов Кирилл/grahredator/main.cpp (108)
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 28 2022 19:27:36, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 02 2022 18:14:31
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00443FBC в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x006F003F в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x2830 (Main), GetLastError(): 87 (Параметр задан неверно). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00443FBC in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00472C23 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_grab() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047418D in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: assign() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0047AB79 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0043E8E2 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 5 0x0041F6D3 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (202):
+
+    200:         if(vybor>=0 && GetAsyncKeyState(VK_DELETE))
+    201:         {
+=>  202:             centralPic[vybor] = centralPic[nCentralPic - 1];
+    203:             nCentralPic--;
+    204:             vybor=-1;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  4 2022 18:14:25, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 04 2022 18:15:25
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00443FBC в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x006F003F в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x2830 (Main), GetLastError(): 87 (Параметр задан неверно). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00443FBC in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00472C23 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_grab() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047418D in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: assign() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0047AB79 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0043E8E2 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 5 0x0041F6D3 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (202):
+
+    200:         if(vybor>=0 && GetAsyncKeyState(VK_DELETE))
+    201:         {
+=>  202:             centralPic[vybor] = centralPic[nCentralPic - 1];
+    203:             nCentralPic--;
+    204:             vybor=-1;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  4 2022 18:14:25, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 04 2022 18:15:25
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00443FBC в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x006F003F в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x29E8 (Main), GetLastError(): 87 (Параметр задан неверно). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00443FBC in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00472C23 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_grab() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047418D in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: assign() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0047AB79 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0043E8E2 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 5 0x0041F6D3 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (202):
+
+    200:         if(vybor>=0 && GetAsyncKeyState(VK_DELETE))
+    201:         {
+=>  202:             centralPic[vybor] = centralPic[nCentralPic - 1];
+    203:             nCentralPic--;
+    204:             vybor=-1;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  4 2022 18:16:23, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 04 2022 18:16:32
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00443FBC в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x006F003F в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x29E8 (Main), GetLastError(): 87 (Параметр задан неверно). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00443FBC in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00472C23 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_grab() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047418D in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: assign() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0047AB79 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0043E8E2 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 5 0x0041F6D3 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (202):
+
+    200:         if(vybor>=0 && GetAsyncKeyState(VK_DELETE))
+    201:         {
+=>  202:             centralPic[vybor] = centralPic[nCentralPic - 1];
+    203:             nCentralPic--;
+    204:             vybor=-1;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  4 2022 18:16:23, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 04 2022 18:16:31
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00443FBC в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x000000F6 в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x2364 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00443FBC in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00472C23 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_grab() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047418D in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: assign() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0047AB79 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0043E8E2 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 5 0x0041F6D3 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (201):
+
+    199:         if(vybor>=0 && GetAsyncKeyState(VK_DELETE))
+    200:         {
+=>  201:             centralPic[vybor] = centralPic[nCentralPic - 1];
+    202:             nCentralPic--;
+    203:             vybor=-1;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  4 2022 18:19:32, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 04 2022 18:24:56
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00443FBC в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x000000F6 в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x2364 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00443FBC in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00472C23 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_grab() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047418D in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: assign() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0047AB79 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0043E8E2 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 5 0x0041F6D3 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (201):
+
+    199:         if(vybor>=0 && GetAsyncKeyState(VK_DELETE))
+    200:         {
+=>  201:             centralPic[vybor] = centralPic[nCentralPic - 1];
+    202:             nCentralPic--;
+    203:             vybor=-1;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  4 2022 18:19:32, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 04 2022 18:24:55
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0044443C в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x0000001A в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x24EC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0044443C in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004734FB in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: swap() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AEC9 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043ECDA in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041EDC7 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (99):
+
+     97:         menuPic[15] = {1200, 250, txLoadImage("img/Building/Wide_Door_02.bmp"), 256, 256, 128, 128, false,"Двери"};
+     98:         menuPic[16] = {1200, 400, txLoadImage("img/Building/Wide_Door_03.bmp"), 256, 256, 128, 128, false,"Двери"};
+=>   99:         menuPic[17] = {100, 550, txLoadImage("img/Building/Wide_Door_04.bmp"), 256, 256, 128, 128, false,"Двери"};
+    100: 
+    101:         menuPic[14] = {1000, 400, txLoadImage("img/Platformer/Ground_10.bmp"), 128, 128, 90,90, false,"Земля"};
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  9 2022 18:18:40, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 09 2022 18:18:44
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0044443C в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x0000001A в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x24EC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0044443C in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004734FB in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: swap() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AEC9 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043ECDA in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041EDC7 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (99):
+
+     97:         menuPic[15] = {1200, 250, txLoadImage("img/Building/Wide_Door_02.bmp"), 256, 256, 128, 128, false,"Двери"};
+     98:         menuPic[16] = {1200, 400, txLoadImage("img/Building/Wide_Door_03.bmp"), 256, 256, 128, 128, false,"Двери"};
+=>   99:         menuPic[17] = {100, 550, txLoadImage("img/Building/Wide_Door_04.bmp"), 256, 256, 128, 128, false,"Двери"};
+    100: 
+    101:         menuPic[14] = {1000, 400, txLoadImage("img/Platformer/Ground_10.bmp"), 128, 128, 90,90, false,"Земля"};
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  9 2022 18:18:40, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 09 2022 18:18:45
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0044443C в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x0000001A в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x246C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0044443C in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004734FB in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: swap() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AEC9 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043ECDA in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041EDC7 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (99):
+
+     97:         menuPic[15] = {1200, 250, txLoadImage("img/Building/Wide_Door_02.bmp"), 256, 256, 128, 128, false,"Двери"};
+     98:         menuPic[16] = {1200, 400, txLoadImage("img/Building/Wide_Door_03.bmp"), 256, 256, 128, 128, false,"Двери"};
+=>   99:         menuPic[17] = {100, 550, txLoadImage("img/Building/Wide_Door_04.bmp"), 256, 256, 128, 128, false,"Двери"};
+    100: 
+    101:         menuPic[14] = {1000, 400, txLoadImage("img/Platformer/Ground_10.bmp"), 128, 128, 90,90, false,"Земля"};
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  9 2022 18:20:00, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 09 2022 18:20:04
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0044443C в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x0000001A в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x246C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0044443C in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004734FB in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: swap() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AEC9 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043ECDA in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041EDC7 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (99):
+
+     97:         menuPic[15] = {1200, 250, txLoadImage("img/Building/Wide_Door_02.bmp"), 256, 256, 128, 128, false,"Двери"};
+     98:         menuPic[16] = {1200, 400, txLoadImage("img/Building/Wide_Door_03.bmp"), 256, 256, 128, 128, false,"Двери"};
+=>   99:         menuPic[17] = {100, 550, txLoadImage("img/Building/Wide_Door_04.bmp"), 256, 256, 128, 128, false,"Двери"};
+    100: 
+    101:         menuPic[14] = {1000, 400, txLoadImage("img/Platformer/Ground_10.bmp"), 128, 128, 90,90, false,"Земля"};
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  9 2022 18:20:00, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 09 2022 18:20:05
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0044443C в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x0000001A в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0xF0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0044443C in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004734FB in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: swap() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AEC9 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043ECDA in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041EDC7 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (99):
+
+     97:         menuPic[15] = {1200, 250, txLoadImage("img/Building/Wide_Door_02.bmp"), 256, 256, 128, 128, false,"Двери"};
+     98:         menuPic[16] = {1200, 400, txLoadImage("img/Building/Wide_Door_03.bmp"), 256, 256, 128, 128, false,"Двери"};
+=>   99:         menuPic[17] = {100, 550, txLoadImage("img/Building/Wide_Door_04.bmp"), 256, 256, 128, 128, false,"Двери"};
+    100: 
+    101:         menuPic[18] = {1000, 400, txLoadImage("img/Platformer/Ground_10.bmp"), 128, 128, 90,90, false,"Земля"};
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  9 2022 18:20:20, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 09 2022 18:20:24
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0044443C в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x0000001A в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0xF0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0044443C in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004734FB in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: swap() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AEC9 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043ECDA in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041EDC7 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (99):
+
+     97:         menuPic[15] = {1200, 250, txLoadImage("img/Building/Wide_Door_02.bmp"), 256, 256, 128, 128, false,"Двери"};
+     98:         menuPic[16] = {1200, 400, txLoadImage("img/Building/Wide_Door_03.bmp"), 256, 256, 128, 128, false,"Двери"};
+=>   99:         menuPic[17] = {100, 550, txLoadImage("img/Building/Wide_Door_04.bmp"), 256, 256, 128, 128, false,"Двери"};
+    100: 
+    101:         menuPic[18] = {1000, 400, txLoadImage("img/Platformer/Ground_10.bmp"), 128, 128, 90,90, false,"Земля"};
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  9 2022 18:20:20, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 09 2022 18:20:24
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004444DC в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x148C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004444DC in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x0047359B in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: swap() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AF69 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043EC39 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041DC27 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (78):
+
+     76:         btn[3] = {540,30,"Окна","Окна"};
+     77:         btn[4] = {710,30,"Двери","Двери"};
+=>   78:         btn[5] = {880,30,"Декор","Декор"};
+     79: 
+     80:         //картинок меню
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  9 2022 18:22:35, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 09 2022 18:22:39
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004444DC в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x148C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004444DC in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x0047359B in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: swap() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AF69 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043EC39 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041DC27 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (78):
+
+     76:         btn[3] = {540,30,"Окна","Окна"};
+     77:         btn[4] = {710,30,"Двери","Двери"};
+=>   78:         btn[5] = {880,30,"Декор","Декор"};
+     79: 
+     80:         //картинок меню
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  9 2022 18:22:35, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 09 2022 18:22:39
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004444DC в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x136C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004444DC in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x0047359B in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: swap() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AF69 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043EC39 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041DC27 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (78):
+
+     76:         btn[3] = {540,30,"Окна","Окна"};
+     77:         btn[4] = {710,30,"Двери","Двери"};
+=>   78:         btn[5] = {880,30,"Декор","Декор"};
+     79: 
+     80:         //картинок меню
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  9 2022 18:22:35, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 09 2022 18:23:55
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004444DC в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x136C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004444DC in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x0047359B in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: swap() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AF69 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043EC39 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041DC27 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (78):
+
+     76:         btn[3] = {540,30,"Окна","Окна"};
+     77:         btn[4] = {710,30,"Двери","Двери"};
+=>   78:         btn[5] = {880,30,"Декор","Декор"};
+     79: 
+     80:         //картинок меню
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  9 2022 18:22:35, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 09 2022 18:23:55
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004444DC в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x2900 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004444DC in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x0047359B in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: swap() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AF69 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043EC39 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041DC27 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (78):
+
+     76:         btn[3] = {540,30,"Окна","Окна"};
+     77:         btn[4] = {710,30,"Двери","Двери"};
+=>   78:         btn[5] = {880,30,"Декор","Декор"};
+     79: 
+     80:         //картинок меню
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  9 2022 18:24:48, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 09 2022 18:24:52
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004444DC в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x2900 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004444DC in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x0047359B in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: swap() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AF69 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043EC39 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041DC27 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (78):
+
+     76:         btn[3] = {540,30,"Окна","Окна"};
+     77:         btn[4] = {710,30,"Двери","Двери"};
+=>   78:         btn[5] = {880,30,"Декор","Декор"};
+     79: 
+     80:         //картинок меню
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  9 2022 18:24:48, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 09 2022 18:24:52
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004444DC в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x19B8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004444DC in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x0047359B in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: swap() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AF69 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043EC39 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041DC27 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (78):
+
+     76:         btn[3] = {540,30,"Окна","Окна"};
+     77:         btn[4] = {710,30,"Двери","Двери"};
+=>   78:         btn[5] = {880,30,"Декор","Декор"};
+     79: 
+     80:         //картинок меню
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  9 2022 18:26:05, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 09 2022 18:26:10
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004444DC в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x19B8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004444DC in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x0047359B in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: swap() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AF69 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043EC39 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041DC27 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (78):
+
+     76:         btn[3] = {540,30,"Окна","Окна"};
+     77:         btn[4] = {710,30,"Двери","Двери"};
+=>   78:         btn[5] = {880,30,"Декор","Декор"};
+     79: 
+     80:         //картинок меню
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  9 2022 18:26:05, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 09 2022 18:26:10
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004444DC в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x2AE8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004444DC in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x0047359B in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: swap() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AF69 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043EC39 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041DC27 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (78):
+
+     76:         btn[3] = {540,30,"Окна","Окна"};
+     77:         btn[4] = {710,30,"Двери","Двери"};
+=>   78:         btn[5] = {880,30,"Декор","Декор"};
+     79: 
+     80:         //картинок меню
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  9 2022 18:26:50, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 09 2022 18:26:55
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004444DC в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x2AE8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004444DC in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x0047359B in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: swap() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AF69 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043EC39 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041DC27 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (78):
+
+     76:         btn[3] = {540,30,"Окна","Окна"};
+     77:         btn[4] = {710,30,"Двери","Двери"};
+=>   78:         btn[5] = {880,30,"Декор","Декор"};
+     79: 
+     80:         //картинок меню
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  9 2022 18:26:50, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 09 2022 18:26:55
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004444DC в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0xBE8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004444DC in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x0047359B in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: swap() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AF69 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043EC39 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041DC27 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (78):
+
+     76:         btn[3] = {540,30,"Окна","Окна"};
+     77:         btn[4] = {710,30,"Двери","Двери"};
+=>   78:         btn[5] = {880,30,"Декор","Декор"};
+     79: 
+     80:         //картинок меню
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  9 2022 18:27:24, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 09 2022 18:27:29
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004444DC в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0xBE8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004444DC in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x0047359B in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: swap() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AF69 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043EC39 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041DC27 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (78):
+
+     76:         btn[3] = {540,30,"Окна","Окна"};
+     77:         btn[4] = {710,30,"Двери","Двери"};
+=>   78:         btn[5] = {880,30,"Декор","Декор"};
+     79: 
+     80:         //картинок меню
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  9 2022 18:27:24, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 09 2022 18:27:29
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004444DC в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x29B0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004444DC in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x0047359B in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: swap() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AF69 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043EC39 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041DC27 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (78):
+
+     76:         btn[3] = {540,30,"Окна","Окна"};
+     77:         btn[4] = {710,30,"Двери","Двери"};
+=>   78:         btn[5] = {880,30,"Декор","Декор"};
+     79: 
+     80:         //картинок меню
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  9 2022 18:27:24, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 09 2022 18:27:35
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004444DC в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x29B0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004444DC in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x0047359B in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: swap() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047AF69 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043EC39 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041DC27 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (78):
+
+     76:         btn[3] = {540,30,"Окна","Окна"};
+     77:         btn[4] = {710,30,"Двери","Двери"};
+=>   78:         btn[5] = {880,30,"Декор","Декор"};
+     79: 
+     80:         //картинок меню
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  9 2022 18:27:24, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 09 2022 18:27:35
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00401433 в функции __exchange_and_add() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h на строке 47. Попытка записать данные по адресу 0x004BF6BC в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x2934 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00401433 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: __exchange_and_add() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h (47):
+
+     45:   static inline _Atomic_word 
+     46:   __exchange_and_add(volatile _Atomic_word* __mem, int __val)
+=>   47:   { return __atomic_fetch_add(__mem, __val, __ATOMIC_ACQ_REL); }
+     48: 
+     49:   static inline void
+
+# 1 0x004014A5 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: __exchange_and_add_dispatch() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h (80):
+
+     78: #ifdef __GTHREADS
+     79:     if (__gthread_active_p())
+=>   80:       return __exchange_and_add(__mem, __val);
+     81:     else
+     82:       return __exchange_and_add_single(__mem, __val);
+
+# 2 0x0047336A in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_dispose() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0047B263 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0043F04A in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 5 0x0041F331 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (104):
+
+    102:         menuPic[20] = {1000, 200, txLoadImage("img/Platformer/Ground_12.bmp"), 128, 128, 90,90, false,"Земля"};
+    103:         menuPic[21] = {1000, 100, txLoadImage("img/Platformer/Ground_01.bmp"), 128, 128, 90,90, false,"Земля"};
+=>  104:         menuPic[22] = {1050, 400, txLoadImage("img/Platformer/Ground_02.bmp"), 128, 128, 90,90, false,"Земля"};
+    105:         menuPic[23] = {1050, 300, txLoadImage("img/Platformer/Ground_03.bmp"), 128, 128, 90,90, false,"Земля"};
+    106: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  9 2022 18:33:07, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 09 2022 18:33:12
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00401433 в функции __exchange_and_add() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h на строке 47. Попытка записать данные по адресу 0x004BF6BC в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F72FC (32-bit), Flags: CMdRE0, Thread: 0x2934 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00401433 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: __exchange_and_add() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h (47):
+
+     45:   static inline _Atomic_word 
+     46:   __exchange_and_add(volatile _Atomic_word* __mem, int __val)
+=>   47:   { return __atomic_fetch_add(__mem, __val, __ATOMIC_ACQ_REL); }
+     48: 
+     49:   static inline void
+
+# 1 0x004014A5 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: __exchange_and_add_dispatch() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/ext/atomicity.h (80):
+
+     78: #ifdef __GTHREADS
+     79:     if (__gthread_active_p())
+=>   80:       return __exchange_and_add(__mem, __val);
+     81:     else
+     82:       return __exchange_and_add_single(__mem, __val);
+
+# 2 0x0047336A in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_dispose() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0047B263 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0043F04A in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 5 0x0041F331 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (104):
+
+    102:         menuPic[20] = {1000, 200, txLoadImage("img/Platformer/Ground_12.bmp"), 128, 128, 90,90, false,"Земля"};
+    103:         menuPic[21] = {1000, 100, txLoadImage("img/Platformer/Ground_01.bmp"), 128, 128, 90,90, false,"Земля"};
+=>  104:         menuPic[22] = {1050, 400, txLoadImage("img/Platformer/Ground_02.bmp"), 128, 128, 90,90, false,"Земля"};
+    105:         menuPic[23] = {1050, 300, txLoadImage("img/Platformer/Ground_03.bmp"), 128, 128, 90,90, false,"Земля"};
+    106: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  9 2022 18:33:07, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 09 2022 18:33:11
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0044494C в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x000000C4 в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdRE0, Thread: 0xD50 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0044494C in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00473A0B in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: swap() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047B3D9 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043F1EA in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041F511 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (106):
+
+    104:         menuPic[22] = {1050, 100, txLoadImage("img/Platformer/Ground_02.bmp"), 128, 128, 90,90, false,"Земля"};
+    105:         menuPic[23] = {1050, 200, txLoadImage("img/Platformer/Ground_03.bmp"), 128, 128, 90,90, false,"Земля"};
+=>  106:         menuPic[24] = {1050, 300, txLoadImage("img/Platformer/Ground_06.bmp"), 128, 128, 90,90, false,"Земля"};
+    107: 
+    108:          //центральные картинки
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  9 2022 18:36:41, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 09 2022 18:36:46
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0044494C в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x000000C4 в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdRE0, Thread: 0xD50 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0044494C in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x00473A0B in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: swap() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047B3D9 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043F1EA in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041F511 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (106):
+
+    104:         menuPic[22] = {1050, 100, txLoadImage("img/Platformer/Ground_02.bmp"), 128, 128, 90,90, false,"Земля"};
+    105:         menuPic[23] = {1050, 200, txLoadImage("img/Platformer/Ground_03.bmp"), 128, 128, 90,90, false,"Земля"};
+=>  106:         menuPic[24] = {1050, 300, txLoadImage("img/Platformer/Ground_06.bmp"), 128, 128, 90,90, false,"Земля"};
+    107: 
+    108:          //центральные картинки
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  9 2022 18:36:41, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 09 2022 18:36:46
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00444FFC в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x0000001A в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdRE0, Thread: 0x27D0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00444FFC in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004740BB in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: swap() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047BA89 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043F89A in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041F609 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (109):
+
+    107:         menuPic[23] = {1050, 550, txLoadImage("img/Building/Wide_Door_04.bmp"), 256, 256, 128, 128, false,"Двери"};
+    108:         menuPic[24] = {900, 100, txLoadImage("img/Platformer/Ground_10.bmp"), 128, 128, 90,90, false,"Земля"};
+=>  109:         menuPic[25] = {900, 200, txLoadImage("img/Platformer/Ground_11.bmp"), 128, 128, 90,90, false,"Земля"};
+    110:         menuPic[26] = {900, 300, txLoadImage("img/Platformer/Ground_12.bmp"), 128, 128, 90,90, false,"Земля"};
+    111:         menuPic[27] = {900, 400, txLoadImage("img/Platformer/Ground_01.bmp"), 128, 128, 90,90, false,"Земля"};
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  9 2022 18:44:24, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 09 2022 18:44:28
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00444FFC в функции _M_is_leaked() в файле c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0x0000001A в модуле C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004F82FC (32-bit), Flags: CMdRE0, Thread: 0x27D0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00444FFC in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004740BB in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: swap() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047BA89 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043F89A in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: operator=() at c:/codsb/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041F609 in C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe: main() at C:/Users/Gigabyte/Desktop/redactor-main/main.cpp (109):
+
+    107:         menuPic[23] = {1050, 550, txLoadImage("img/Building/Wide_Door_04.bmp"), 256, 256, 128, 128, false,"Двери"};
+    108:         menuPic[24] = {900, 100, txLoadImage("img/Platformer/Ground_10.bmp"), 128, 128, 90,90, false,"Земля"};
+=>  109:         menuPic[25] = {900, 200, txLoadImage("img/Platformer/Ground_11.bmp"), 128, 128, 90,90, false,"Земля"};
+    110:         menuPic[26] = {900, 300, txLoadImage("img/Platformer/Ground_12.bmp"), 128, 128, 90,90, false,"Земля"};
+    111:         menuPic[27] = {900, 400, txLoadImage("img/Platformer/Ground_01.bmp"), 128, 128, 90,90, false,"Земля"};
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Nov  9 2022 18:44:24, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 09 2022 18:44:28
+
+Run file:	C:\Users\Gigabyte\Desktop\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\Users\Gigabyte\Desktop\redactor-main
+
+--------------------------------------------------
