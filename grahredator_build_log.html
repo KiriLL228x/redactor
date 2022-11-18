@@ -4,31 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
 <body>
 <tt>
-Build started on: <u>09-11-2022 at 19:37.11</u><br />
-Build ended on: <u>09-11-2022 at 19:37.15</u><p />
+Build started on: <u>16-11-2022 at 17:15.11</u><br />
+Build ended on: <u>16-11-2022 at 17:15.20</u><p />
 <b>-------------- Build: Debug in grahredator (compiler: GNU GCC Compiler)---------------</b><br />
 g++.exe -Wall -fexceptions  -g     -c C:\Users\Gigabyte\Desktop\redactor-main\main.cpp -o obj\Debug\main.o<br />
 C:\Users\Gigabyte\Desktop\redactor-main\main.cpp: In function 'void drawButton(Button)':<br />
-<font color="#0000ff">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:25:6: warning: no previous declaration for 'void drawButton(Button)' [-Wmissing-declarations]</font><br />
+<font color="#0000ff">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:27:6: warning: no previous declaration for 'void drawButton(Button)' [-Wmissing-declarations]</font><br />
  void drawButton(Button btn)<br />
       ^<br />
 C:\Users\Gigabyte\Desktop\redactor-main\main.cpp: In function 'bool click(Button)':<br />
-<font color="#0000ff">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:38:6: warning: no previous declaration for 'bool click(Button)' [-Wmissing-declarations]</font><br />
+<font color="#0000ff">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:40:6: warning: no previous declaration for 'bool click(Button)' [-Wmissing-declarations]</font><br />
  bool click(Button btn)<br />
       ^<br />
 C:\Users\Gigabyte\Desktop\redactor-main\main.cpp: In function 'void drawPicture(Pictures)':<br />
-<font color="#0000ff">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:47:6: warning: no previous declaration for 'void drawPicture(Pictures)' [-Wmissing-declarations]</font><br />
+<font color="#0000ff">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:49:6: warning: no previous declaration for 'void drawPicture(Pictures)' [-Wmissing-declarations]</font><br />
  void drawPicture(Pictures pct)<br />
       ^<br />
 C:\Users\Gigabyte\Desktop\redactor-main\main.cpp: In constructor 'Button::Button()':<br />
-<font color="#0000ff">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:16:8: warning: 'Button::x' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:18:8: warning: 'Button::x' should be initialized in the member initialization list [-Weffc++]</font><br />
  struct Button<br />
         ^<br />
-<font color="#0000ff">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:16:8: warning: 'Button::y' should be initialized in the member initialization list [-Weffc++]</font><br />
-<font color="#0000ff">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:16:8: warning: 'Button::text' should be initialized in the member initialization list [-Weffc++]</font><br />
-<font color="#0000ff">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:16:8: warning: 'Button::category' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:18:8: warning: 'Button::y' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:18:8: warning: 'Button::text' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:18:8: warning: 'Button::category' should be initialized in the member initialization list [-Weffc++]</font><br />
 C:\Users\Gigabyte\Desktop\redactor-main\main.cpp: In function 'int main()':<br />
-C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:71:29: note: synthesized method 'Button::Button()' first required here <br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:73:29: note: synthesized method 'Button::Button()' first required here <br />
          Button btn[COUNT_BTN];<br />
                              ^<br />
 C:\Users\Gigabyte\Desktop\redactor-main\main.cpp: In constructor 'Pictures::Pictures()':<br />
@@ -36,24 +36,480 @@ C:\Users\Gigabyte\Desktop\redactor-main\main.cpp: In constructor 'Pictures::Pict
  struct Pictures<br />
         ^<br />
 <font color="#0000ff">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: warning: 'Pictures::y' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: warning: 'Pictures::adress' should be initialized in the member initialization list [-Weffc++]</font><br />
 <font color="#0000ff">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: warning: 'Pictures::image' should be initialized in the member initialization list [-Weffc++]</font><br />
 <font color="#0000ff">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: warning: 'Pictures::w' should be initialized in the member initialization list [-Weffc++]</font><br />
 <font color="#0000ff">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: warning: 'Pictures::h' should be initialized in the member initialization list [-Weffc++]</font><br />
 <font color="#0000ff">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: warning: 'Pictures::w_scr' should be initialized in the member initialization list [-Weffc++]</font><br />
 <font color="#0000ff">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: warning: 'Pictures::h_scr' should be initialized in the member initialization list [-Weffc++]</font><br />
-<font color="#0000ff">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: warning: 'Pictures::visible' should be initialized in the member initialization list [-Weffc++]</font><br />
 <font color="#0000ff">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: warning: 'Pictures::category' should be initialized in the member initialization list [-Weffc++]</font><br />
+<font color="#0000ff">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: warning: 'Pictures::visible' should be initialized in the member initialization list [-Weffc++]</font><br />
 C:\Users\Gigabyte\Desktop\redactor-main\main.cpp: In function 'int main()':<br />
-C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:80:35: note: synthesized method 'Pictures::Pictures()' first required here <br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:82:35: note: synthesized method 'Pictures::Pictures()' first required here <br />
          Pictures menuPic[COUNT_PIC];<br />
                                    ^<br />
-<font color="#0000ff">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:68:10: warning: variable 'mouse_free' set but not used [-Wunused-but-set-variable]</font><br />
-     bool mouse_free = false;<br />
-          ^<br />
-g++.exe  -o bin\Debug\grahredator.exe obj\Debug\main.o     -mwindows<br />
-Output size is 2,20 MB<br />
-<font color="#0000ff">Process terminated with status 0 (0 minutes, 3 seconds)</font><br />
-<font color="#0000ff">0 errors, 17 warnings (0 minutes, 3 seconds)</font><br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:83:20: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[0] = {900, 100, txLoadImage("img/Building/Wall_A_02.bmp"),   320,320, 90,90, "Стены"};<br />
+                    ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:83:20: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:84:20: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[1] = {900, 200, txLoadImage("img/Building/Wall_B_02.bmp"),   320,320, 90,90, "Стены"};<br />
+                    ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:84:20: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:85:20: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[2] = {900, 300, txLoadImage("img/Building/Wall_C_02.bmp"),   320,320, 90,90, "Стены"};<br />
+                    ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:85:20: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:86:20: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[3] = {860, 100, txLoadImage("img/Building/Wall_A_01.bmp"),   128,320, 32,80, "Стены"};<br />
+                    ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:86:20: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:87:20: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[4] = {1000, 100, txLoadImage("img/Building/Wall_A_03.bmp"),  128,320, 32,80, "Стены"};<br />
+                    ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:87:20: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:88:20: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[5] = {860, 200, txLoadImage("img/Building/Wall_B_01.bmp"),   128,320, 32,80, "Стены"};<br />
+                    ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:88:20: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:89:20: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[6] = {1000, 200, txLoadImage("img/Building/Wall_B_03.bmp"),  128,320, 32,80, "Стены"};<br />
+                    ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:89:20: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:90:20: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[7] = {860, 300, txLoadImage("img/Building/Wall_C_01.bmp"),   128,320, 32,80, "Стены"};<br />
+                    ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:90:20: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:91:20: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[8] = {1000, 300, txLoadImage("img/Building/Wall_C_03.bmp"),  128,320, 32,80, "Стены"};<br />
+                    ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:91:20: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:93:20: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[9] = {930, 100, txLoadImage("img/Building/Roof_A_01.bmp"),   128,160, 64,80, "Крыша"};<br />
+                    ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:93:20: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:94:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[10] = {1000, 100, txLoadImage("img/Building/Roof_A_02.bmp"), 128,160, 64,80, "Крыша"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:94:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:95:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[11] = {1070, 100, txLoadImage("img/Building/Roof_A_03.bmp"), 128,160, 64,80, "Крыша"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:95:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:96:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[12] = {1050, 200, txLoadImage("img/Building/Roof_A_04.bmp"), 352,160, 90,40, "Крыша"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:96:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:97:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[13] = {950, 200, txLoadImage("img/Building/Roof_A_05.bmp"),  352,160, 90,40, "Крыша"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:97:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:98:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[14] = {930, 300, txLoadImage("img/Building/Roof_B_01.bmp"),  128,160, 64,80, "Крыша"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:98:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:99:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[15] = {1000, 300, txLoadImage("img/Building/Roof_B_02.bmp"), 128,160, 64,80, "Крыша"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:99:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:100:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[16] = {1070, 300, txLoadImage("img/Building/Roof_B_03.bmp"), 128,160, 64,80, "Крыша"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:100:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:101:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[17] = {1050, 400, txLoadImage("img/Building/Roof_B_04.bmp"), 352,160, 90,40, "Крыша"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:101:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:102:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[18] = {950, 400, txLoadImage("img/Building/Roof_B_05.bmp"),  352,160, 90,40, "Крыша"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:102:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:105:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[19] = {900, 100, txLoadImage("img/Building/Window_01.bmp"),        128,128, 64,64, "Окна"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:105:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:106:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[20] = {900, 200, txLoadImage("img/Building/Window_02.bmp"),        128,128, 64,64, "Окна"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:106:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:107:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[21] = {900, 300, txLoadImage("img/Building/Window_03.bmp"),        128,128, 64,64, "Окна"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:107:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:108:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[22] = {1050, 100, txLoadImage("img/Building/Stone_Window_01.bmp"), 160,160, 80,80, "Окна"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:108:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:109:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[23] = {1050, 200, txLoadImage("img/Building/Stone_Window_02.bmp"), 160,160, 80,80, "Окна"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:109:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:110:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[24] = {1050, 300, txLoadImage("img/Building/Stone_Window_03.bmp"), 160,160, 80,80, "Окна"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:110:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:112:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[25] = {900, 100, txLoadImage("img/Building/Door_01.bmp"),          128,256, 64,128,  "Двери"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:112:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:113:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[26] = {900, 250, txLoadImage("img/Building/Door_02.bmp"),          128,256, 64,128,  "Двери"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:113:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:114:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[27] = {900, 400, txLoadImage("img/Building/Door_03.bmp"),          128,256, 64,128,  "Двери"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:114:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:115:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[28] = {900, 550, txLoadImage("img/Building/Door_04.bmp"),          128,256, 64,128,  "Двери"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:115:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:116:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[29] = {1050, 100, txLoadImage("img/Building/Wide_Door_01.bmp"),    256,256, 128,128, "Двери"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:116:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:117:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[30] = {1050, 250, txLoadImage("img/Building/Wide_Door_02.bmp"),    256,256, 128,128, "Двери"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:117:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:118:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[31] = {1050, 400, txLoadImage("img/Building/Wide_Door_03.bmp"),    256,256, 128,128, "Двери"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:118:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:119:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[32] = {1050, 550, txLoadImage("img/Building/Wide_Door_04.bmp"),    256,256, 128,128, "Двери"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:119:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:121:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[33] = {900, 100, txLoadImage("img/Platformer/Ground_10.bmp"),  128,128, 90,90, "Земля"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:121:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:122:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[34] = {900, 200, txLoadImage("img/Platformer/Ground_11.bmp"),  128,128, 90,90, "Земля"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:122:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:123:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[35] = {900, 300, txLoadImage("img/Platformer/Ground_12.bmp"),  128,128, 90,90, "Земля"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:123:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:124:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[36] = {900, 400, txLoadImage("img/Platformer/Ground_01.bmp"),  128,128, 90,90, "Земля"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:124:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:125:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[37] = {1050, 100, txLoadImage("img/Platformer/Ground_02.bmp"), 128,128, 90,90, "Земля"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:125:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:126:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[38] = {1050, 200, txLoadImage("img/Platformer/Ground_03.bmp"), 128,128, 90,90, "Земля"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:126:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:127:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[39] = {1050, 300, txLoadImage("img/Platformer/Ground_06.bmp"), 128,128, 90,90, "Земля"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:127:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:129:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[40] = {900, 100, txLoadImage("img/Environment/Wooden_Barrel.bmp"), 128,128, 64,64,   "Декор"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:129:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:130:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[41] = {900, 200, txLoadImage("img/Environment/Wooden_Crate.bmp"),  128,128, 64,64,   "Декор"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:130:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:131:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[42] = {900, 300, txLoadImage("img/Environment/Well.bmp"),          480,480, 120,120, "Декор"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:131:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:132:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[43] = {900, 400, txLoadImage("img/Environment/Street_Lantern.bmp"),480,480, 120,120, "Декор"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:132:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:133:21: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+         menuPic[44] = {900, 500, txLoadImage("img/Environment/Decor_Cart.bmp"),    256,256, 128,128, "Декор"};<br />
+                     ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:133:21: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#ff0000">C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:197:41: error: no match for 'operator=' (operand types are 'Pictures' and '&lt;brace-enclosed initializer list&gt;')</font><br />
+                 centralPic[nCentralPic] = { 250,<br />
+                                         ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:197:41: note: candidates are:<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(const Pictures&amp;)<br />
+ struct Pictures<br />
+        ^<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'const Pictures&amp;'<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note: Pictures&amp; Pictures::operator=(Pictures&amp;&amp;)<br />
+C:\Users\Gigabyte\Desktop\redactor-main\main.cpp:3:8: note:   no known conversion for argument 1 from '&lt;brace-enclosed initializer list&gt;' to 'Pictures&amp;&amp;'<br />
+<font color="#a00000">Process terminated with status 1 (0 minutes, 9 seconds)</font><br />
+<font color="#a00000">46 errors, 17 warnings (0 minutes, 9 seconds)</font><br />
 </tt>
 </body>
 </html>

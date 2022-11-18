@@ -4,13 +4,15 @@ struct Pictures
 {
     int x;
     int y;
+    string adress;
     HDC image;
     int w;
     int h;
     int w_scr;
     int h_scr;
-    bool visible;
     string category;
+    bool visible;
+
 };
 //структура кнопки
 struct Button
@@ -78,59 +80,69 @@ int main()
 
         //картинок меню
         Pictures menuPic[COUNT_PIC];
-        menuPic[0] = {900, 100, txLoadImage("img/Building/Wall_A_02.bmp"),   320,320, 90,90, false,"Стены"};
-        menuPic[1] = {900, 200, txLoadImage("img/Building/Wall_B_02.bmp"),   320,320, 90,90, false,"Стены"};
-        menuPic[2] = {900, 300, txLoadImage("img/Building/Wall_C_02.bmp"),   320,320, 90,90, false,"Стены"};
-        menuPic[3] = {860, 100, txLoadImage("img/Building/Wall_A_01.bmp"),   128,320, 32,80, false,"Стены"};
-        menuPic[4] = {1000, 100, txLoadImage("img/Building/Wall_A_03.bmp"),  128,320, 32,80, false,"Стены"};
-        menuPic[5] = {860, 200, txLoadImage("img/Building/Wall_B_01.bmp"),   128,320, 32,80, false,"Стены"};
-        menuPic[6] = {1000, 200, txLoadImage("img/Building/Wall_B_03.bmp"),  128,320, 32,80, false,"Стены"};
-        menuPic[7] = {860, 300, txLoadImage("img/Building/Wall_C_01.bmp"),   128,320, 32,80, false,"Стены"};
-        menuPic[8] = {1000, 300, txLoadImage("img/Building/Wall_C_03.bmp"),  128,320, 32,80, false,"Стены"};
+        menuPic[0] = {900, 100, txLoadImage("img/Building/Wall_A_02.bmp"),   320,320, 90,90, "Стены"};
+        menuPic[1] = {900, 200, txLoadImage("img/Building/Wall_B_02.bmp"),   320,320, 90,90, "Стены"};
+        menuPic[2] = {900, 300, txLoadImage("img/Building/Wall_C_02.bmp"),   320,320, 90,90, "Стены"};
+        menuPic[3] = {860, 100, txLoadImage("img/Building/Wall_A_01.bmp"),   128,320, 32,80, "Стены"};
+        menuPic[4] = {1000, 100, txLoadImage("img/Building/Wall_A_03.bmp"),  128,320, 32,80, "Стены"};
+        menuPic[5] = {860, 200, txLoadImage("img/Building/Wall_B_01.bmp"),   128,320, 32,80, "Стены"};
+        menuPic[6] = {1000, 200, txLoadImage("img/Building/Wall_B_03.bmp"),  128,320, 32,80, "Стены"};
+        menuPic[7] = {860, 300, txLoadImage("img/Building/Wall_C_01.bmp"),   128,320, 32,80, "Стены"};
+        menuPic[8] = {1000, 300, txLoadImage("img/Building/Wall_C_03.bmp"),  128,320, 32,80, "Стены"};
 
-        menuPic[9] = {930, 100, txLoadImage("img/Building/Roof_A_01.bmp"),   128,160, 64,80, false,"Крыша"};
-        menuPic[10] = {1000, 100, txLoadImage("img/Building/Roof_A_02.bmp"), 128,160, 64,80, false,"Крыша"};
-        menuPic[11] = {1070, 100, txLoadImage("img/Building/Roof_A_03.bmp"), 128,160, 64,80, false,"Крыша"};
-        menuPic[12] = {1050, 200, txLoadImage("img/Building/Roof_A_04.bmp"), 352,160, 90,40, false,"Крыша"};
-        menuPic[13] = {950, 200, txLoadImage("img/Building/Roof_A_05.bmp"),  352,160, 90,40, false,"Крыша"};
-        menuPic[14] = {930, 300, txLoadImage("img/Building/Roof_B_01.bmp"),  128,160, 64,80, false,"Крыша"};
-        menuPic[15] = {1000, 300, txLoadImage("img/Building/Roof_B_02.bmp"), 128,160, 64,80, false,"Крыша"};
-        menuPic[16] = {1070, 300, txLoadImage("img/Building/Roof_B_03.bmp"), 128,160, 64,80, false,"Крыша"};
-        menuPic[17] = {1050, 400, txLoadImage("img/Building/Roof_B_04.bmp"), 352,160, 90,40, false,"Крыша"};
-        menuPic[18] = {950, 400, txLoadImage("img/Building/Roof_B_05.bmp"),  352,160, 90,40, false,"Крыша"};
+        menuPic[9] = {930, 100, txLoadImage("img/Building/Roof_A_01.bmp"),   128,160, 64,80, "Крыша"};
+        menuPic[10] = {1000, 100, txLoadImage("img/Building/Roof_A_02.bmp"), 128,160, 64,80, "Крыша"};
+        menuPic[11] = {1070, 100, txLoadImage("img/Building/Roof_A_03.bmp"), 128,160, 64,80, "Крыша"};
+        menuPic[12] = {1050, 200, txLoadImage("img/Building/Roof_A_04.bmp"), 352,160, 90,40, "Крыша"};
+        menuPic[13] = {950, 200, txLoadImage("img/Building/Roof_A_05.bmp"),  352,160, 90,40, "Крыша"};
+        menuPic[14] = {930, 300, txLoadImage("img/Building/Roof_B_01.bmp"),  128,160, 64,80, "Крыша"};
+        menuPic[15] = {1000, 300, txLoadImage("img/Building/Roof_B_02.bmp"), 128,160, 64,80, "Крыша"};
+        menuPic[16] = {1070, 300, txLoadImage("img/Building/Roof_B_03.bmp"), 128,160, 64,80, "Крыша"};
+        menuPic[17] = {1050, 400, txLoadImage("img/Building/Roof_B_04.bmp"), 352,160, 90,40, "Крыша"};
+        menuPic[18] = {950, 400, txLoadImage("img/Building/Roof_B_05.bmp"),  352,160, 90,40, "Крыша"};
 
 
-        menuPic[19] = {900, 100, txLoadImage("img/Building/Window_01.bmp"),        128,128, 64,64, false,"Окна"};
-        menuPic[20] = {900, 200, txLoadImage("img/Building/Window_02.bmp"),        128,128, 64,64, false,"Окна"};
-        menuPic[21] = {900, 300, txLoadImage("img/Building/Window_03.bmp"),        128,128, 64,64, false,"Окна"};
-        menuPic[22] = {1050, 100, txLoadImage("img/Building/Stone_Window_01.bmp"), 160,160, 80,80, false,"Окна"};
-        menuPic[23] = {1050, 200, txLoadImage("img/Building/Stone_Window_02.bmp"), 160,160, 80,80, false,"Окна"};
-        menuPic[24] = {1050, 300, txLoadImage("img/Building/Stone_Window_03.bmp"), 160,160, 80,80, false,"Окна"};
+        menuPic[19] = {900, 100, txLoadImage("img/Building/Window_01.bmp"),        128,128, 64,64, "Окна"};
+        menuPic[20] = {900, 200, txLoadImage("img/Building/Window_02.bmp"),        128,128, 64,64, "Окна"};
+        menuPic[21] = {900, 300, txLoadImage("img/Building/Window_03.bmp"),        128,128, 64,64, "Окна"};
+        menuPic[22] = {1050, 100, txLoadImage("img/Building/Stone_Window_01.bmp"), 160,160, 80,80, "Окна"};
+        menuPic[23] = {1050, 200, txLoadImage("img/Building/Stone_Window_02.bmp"), 160,160, 80,80, "Окна"};
+        menuPic[24] = {1050, 300, txLoadImage("img/Building/Stone_Window_03.bmp"), 160,160, 80,80, "Окна"};
 
-        menuPic[25] = {900, 100, txLoadImage("img/Building/Door_01.bmp"),          128,256, 64,128, false,"Двери"};
-        menuPic[26] = {900, 250, txLoadImage("img/Building/Door_02.bmp"),          128,256, 64,128, false,"Двери"};
-        menuPic[27] = {900, 400, txLoadImage("img/Building/Door_03.bmp"),          128,256, 64,128, false,"Двери"};
-        menuPic[28] = {900, 550, txLoadImage("img/Building/Door_04.bmp"),          128,256, 64,128, false,"Двери"};
-        menuPic[29] = {1050, 100, txLoadImage("img/Building/Wide_Door_01.bmp"),    256,256, 128,128, false,"Двери"};
-        menuPic[30] = {1050, 250, txLoadImage("img/Building/Wide_Door_02.bmp"),    256,256, 128,128, false,"Двери"};
-        menuPic[31] = {1050, 400, txLoadImage("img/Building/Wide_Door_03.bmp"),    256,256, 128,128, false,"Двери"};
-        menuPic[32] = {1050, 550, txLoadImage("img/Building/Wide_Door_04.bmp"),    256,256, 128,128, false,"Двери"};
+        menuPic[25] = {900, 100, txLoadImage("img/Building/Door_01.bmp"),          128,256, 64,128,  "Двери"};
+        menuPic[26] = {900, 250, txLoadImage("img/Building/Door_02.bmp"),          128,256, 64,128,  "Двери"};
+        menuPic[27] = {900, 400, txLoadImage("img/Building/Door_03.bmp"),          128,256, 64,128,  "Двери"};
+        menuPic[28] = {900, 550, txLoadImage("img/Building/Door_04.bmp"),          128,256, 64,128,  "Двери"};
+        menuPic[29] = {1050, 100, txLoadImage("img/Building/Wide_Door_01.bmp"),    256,256, 128,128, "Двери"};
+        menuPic[30] = {1050, 250, txLoadImage("img/Building/Wide_Door_02.bmp"),    256,256, 128,128, "Двери"};
+        menuPic[31] = {1050, 400, txLoadImage("img/Building/Wide_Door_03.bmp"),    256,256, 128,128, "Двери"};
+        menuPic[32] = {1050, 550, txLoadImage("img/Building/Wide_Door_04.bmp"),    256,256, 128,128, "Двери"};
 
-        menuPic[33] = {900, 100, txLoadImage("img/Platformer/Ground_10.bmp"),  128,128, 90,90, false,"Земля"};
-        menuPic[34] = {900, 200, txLoadImage("img/Platformer/Ground_11.bmp"),  128,128, 90,90, false,"Земля"};
-        menuPic[35] = {900, 300, txLoadImage("img/Platformer/Ground_12.bmp"),  128,128, 90,90, false,"Земля"};
-        menuPic[36] = {900, 400, txLoadImage("img/Platformer/Ground_01.bmp"),  128,128, 90,90, false,"Земля"};
-        menuPic[37] = {1050, 100, txLoadImage("img/Platformer/Ground_02.bmp"), 128,128, 90,90, false,"Земля"};
-        menuPic[38] = {1050, 200, txLoadImage("img/Platformer/Ground_03.bmp"), 128,128, 90,90, false,"Земля"};
-        menuPic[39] = {1050, 300, txLoadImage("img/Platformer/Ground_06.bmp"), 128,128, 90,90, false,"Земля"};
-        
-        menuPic[40] = {900, 100, txLoadImage("img/Environment/Wooden_Barrel.bmp"), 128,128, 64,64, false,"Декор"};
-        menuPic[41] = {900, 200, txLoadImage("img/Environment/Wooden_Crate.bmp"),  128,128, 90,90, false,"Декор"};
-        menuPic[42] = {900, 300, txLoadImage("img/Environment/Well.bmp"),          128,128, 90,90, false,"Декор"};
-        menuPic[43] = {900, 400, txLoadImage("img/Environment/Street_Lantern.bmp"),128,128, 90,90, false,"Декор"};
-        menuPic[44] = {900, 500, txLoadImage("img/Environment/Decor_Cart.bmp"),    128,128, 90,90, false,"Декор"};
-       
-    
+        menuPic[33] = {900, 100, txLoadImage("img/Platformer/Ground_10.bmp"),  128,128, 90,90, "Земля"};
+        menuPic[34] = {900, 200, txLoadImage("img/Platformer/Ground_11.bmp"),  128,128, 90,90, "Земля"};
+        menuPic[35] = {900, 300, txLoadImage("img/Platformer/Ground_12.bmp"),  128,128, 90,90, "Земля"};
+        menuPic[36] = {900, 400, txLoadImage("img/Platformer/Ground_01.bmp"),  128,128, 90,90, "Земля"};
+        menuPic[37] = {1050, 100, txLoadImage("img/Platformer/Ground_02.bmp"), 128,128, 90,90, "Земля"};
+        menuPic[38] = {1050, 200, txLoadImage("img/Platformer/Ground_03.bmp"), 128,128, 90,90, "Земля"};
+        menuPic[39] = {1050, 300, txLoadImage("img/Platformer/Ground_06.bmp"), 128,128, 90,90, "Земля"};
+
+        menuPic[40] = {900, 100, txLoadImage("img/Environment/Wooden_Barrel.bmp"), 128,128, 64,64,   "Декор"};
+        menuPic[41] = {900, 200, txLoadImage("img/Environment/Wooden_Crate.bmp"),  128,128, 64,64,   "Декор"};
+        menuPic[42] = {900, 300, txLoadImage("img/Environment/Well.bmp"),          480,480, 120,120, "Декор"};
+        menuPic[43] = {900, 400, txLoadImage("img/Environment/Street_Lantern.bmp"),480,480, 120,120, "Декор"};
+        menuPic[44] = {900, 500, txLoadImage("img/Environment/Decor_Cart.bmp"),    256,256, 128,128, "Декор"};
+
+       for(int npic=0; npic < COUNT_PIC; npic++)
+       {
+         menuPic[npic].visible = false;
+         
+          if(menuPicture[npic].category == "Земля" )
+        {
+            menuPicture[npic].w_scr = 128;
+            menuPicture[npic].h_scr = 90;
+        }
+         
+       }
 
          //центральные картинки
         Pictures centralPic[1000];
@@ -144,7 +156,7 @@ int main()
         txBitBlt(txDC(), 0, 0, 1200, 900, Fon3);
 
         //Рисование кнопок
-        for(int nk=0; nk<5; nk++)
+        for(int nk=0; nk<COUNT_BTN; nk++)
         {
             drawButton(btn[nk]);
         }
@@ -160,7 +172,7 @@ int main()
         }
 
         //видимость картинок меню по  категории
-        for(int nk=0; nk<5; nk++)
+        for(int nk=0; nk<COUNT_BTN; nk++)
         {
             if(click(btn[nk]))
             {
@@ -196,8 +208,8 @@ int main()
                                             menuPic[npic].h,
                                             menuPic[npic].w,
                                             menuPic[npic].h,
-                                            menuPic[npic].visible,
-                                            menuPic[npic].category
+                                            menuPic[npic].category,
+                                            menuPic[npic].visible
                                           };
                 nCentralPic++;
              }
