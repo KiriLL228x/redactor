@@ -1,0 +1,6 @@
+250
+200
+img/Окна/Stone_Window_03.bmp
+205
+215
+img/Декор/Decor_Chest.bmp

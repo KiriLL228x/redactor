@@ -1,4 +1,11 @@
 #include "TXLib.h"
+#include <iostream>
+#include <fstream>
+#include "dirent.h"
+#include <conio.h>
+#include <stdio.h>
+#include <stdlib.h>
+using namespace std;
 //структура картинки
 struct Pictures
 {
@@ -78,12 +85,31 @@ int get_h(string adress)
                return h;
 }
 
-//int wh()
-//{
-//    menuPic[npic].w_scr = menuPic[npic].w / 3;
- //   menuPic[npic].h_scr = menuPic[npic].h / 3;
-//return 1;
-//}
+int readFromDir(string adress, Pictures menuPic[], int COUNT_PIC)
+{
+    DIR *dir;
+    struct dirent *ent;
+    int lastY = 50;
+    if ((dir = opendir (adress.c_str())) != NULL)
+    {
+      while ((ent = readdir (dir)) != NULL)
+      {
+        if((string)ent->d_name != "." && (string)ent->d_name != "..")
+        {
+            menuPic[COUNT_PIC].y = lastY;
+            menuPic[COUNT_PIC].adress = adress + (string)ent->d_name;
+            COUNT_PIC ++;
+            lastY +=50;
+        }
+      }
+      closedir (dir);
+    }
+    return COUNT_PIC;
+}
+
+const int COUNT_BTN = 8;
+const int BTN_SAVE = COUNT_BTN - 1;
+const int BTN_LOAD = COUNT_BTN - 2;
 
 int main()
 {
@@ -93,8 +119,8 @@ int main()
 
     HDC Fon3 = txLoadImage("img/fon3.bmp");
 
-    int COUNT_BTN = 6;
-    int COUNT_PIC = 45;
+    int COUNT_BTN = 8;
+    int COUNT_PIC = 0;
     int vybor = -1;
     int nCentralPic = 0;
     bool mouse_free = false;
@@ -107,64 +133,28 @@ int main()
         btn[3] = {540,30,"Окна","Окна"};
         btn[4] = {710,30,"Двери","Двери"};
         btn[5] = {880,30,"Декор","Декор"};
+        btn[6] = {1050,30,"Загрузить",""};
+        btn[7] = {1050,80,"Сохранить",""};
 
         //картинок меню
-        Pictures menuPic[COUNT_PIC];
-        menuPic[0] = {900, 100, "img/Стены/Wall_A_02.bmp" };
-        menuPic[1] = {900, 200, "img/Стены/Wall_B_02.bmp" };
-        menuPic[2] = {900, 300, "img/Стены/Wall_C_02.bmp" };
-        menuPic[3] = {900, 400, "img/Стены/Wall_A_01.bmp" };
-        menuPic[4] = {900, 500, "img/Стены/Wall_A_03.bmp"};
-        menuPic[5] = {900, 600, "img/Стены/Wall_B_01.bmp" };
-        menuPic[6] = {900, 700, "img/Стены/Wall_B_03.bmp"};
-        menuPic[7] = {900, 300, "img/Стены/Wall_C_01.bmp" };
-        menuPic[8] = {900, 300, "img/Стены/Wall_C_03.bmp"};
+        Pictures menuPic[1000];
 
-        menuPic[9] = {930, 100, "img/Крыша/Roof_A_01.bmp"};
-        menuPic[10] = {1000, 100, "img/Крыша/Roof_A_02.bmp"};
-        menuPic[11] = {1070, 100, "img/Крыша/Roof_A_03.bmp"};
-        menuPic[12] = {1050, 200, "img/Крыша/Roof_A_04.bmp"};
-        menuPic[13] = {950, 200, "img/Крыша/Roof_A_05.bmp"};
-        menuPic[14] = {930, 300, "img/Крыша/Roof_B_01.bmp"};
-        menuPic[15] = {1000, 300, "img/Крыша/Roof_B_02.bmp"};
-        menuPic[16] = {1070, 300, "img/Крыша/Roof_B_03.bmp"};
-        menuPic[17] = {1050, 400, "img/Крыша/Roof_B_04.bmp"};
-        menuPic[18] = {950, 400, "img/Крыша/Roof_B_05.bmp"};
-
-
-        menuPic[19] = {900, 100,"img/Окна/Window_01.bmp"};
-        menuPic[20] = {900, 200, "img/Окна/Window_02.bmp"};
-        menuPic[21] = {900, 300, "img/Окна/Window_03.bmp"};
-        menuPic[22] = {1050, 100, "img/Окна/Stone_Window_01.bmp"};
-        menuPic[23] = {1050, 200, "img/Окна/Stone_Window_02.bmp"};
-        menuPic[24] = {1050, 300, "img/Окна/Stone_Window_03.bmp"};
-
-        menuPic[25] = {900, 100, "img/Двери/Door_01.bmp"};
-        menuPic[26] = {900, 250, "img/Двери/Door_02.bmp"};
-        menuPic[27] = {900, 400, "img/Двери/Door_03.bmp"};
-        menuPic[28] = {900, 550, "img/Двери/Door_04.bmp"};
-        menuPic[29] = {1050, 100, "img/Двери/Wide_Door_01.bmp"};
-        menuPic[30] = {1050, 250, "img/Двери/Wide_Door_02.bmp"};
-        menuPic[31] = {1050, 400, "img/Двери/Wide_Door_03.bmp"};
-        menuPic[32] = {1050, 550,"img/Двери/Wide_Door_04.bmp"};
-
-        menuPic[33] = {900, 100,"img/Земля/Ground_10.bmp"};
-        menuPic[34] = {900, 200, "img/Земля/Ground_11.bmp"};
-        menuPic[35] = {900, 300, "img/Земля/Ground_12.bmp"};
-        menuPic[36] = {900, 400, "img/Земля/Ground_01.bmp"};
-        menuPic[37] = {1050, 100, "img/Земля/Ground_02.bmp"};
-        menuPic[38] = {1050, 200, "img/Земля/Ground_03.bmp"};
-        menuPic[39] = {1050, 300, "img/Земля/Ground_06.bmp"};
-
-        menuPic[40] = {900, 100, "img/Декор/Wooden_Barrel.bmp"};
-        menuPic[41] = {900, 200, "img/Декор/Wooden_Crate.bmp"};
-        menuPic[42] = {900, 300, "img/Декор/Well.bmp"};
-        menuPic[43] = {900, 400, "img/Декор/Street_Lantern.bmp"};
-        menuPic[44] = {900, 500, "img/Декор/Decor_Cart.bmp"};
+        //центральные картинки
+        Pictures centralPic[1000];
+        COUNT_PIC = readFromDir("img/Стены/", menuPic, COUNT_PIC);
+        COUNT_PIC = readFromDir("img/Крыша/", menuPic, COUNT_PIC);
+        COUNT_PIC = readFromDir("img/Окна/",  menuPic, COUNT_PIC);
+        COUNT_PIC = readFromDir("img/Двери/", menuPic, COUNT_PIC);
+        COUNT_PIC = readFromDir("img/Земля/", menuPic, COUNT_PIC);
+        COUNT_PIC = readFromDir("img/Декор/", menuPic, COUNT_PIC);
 
        for(int npic=0; npic < COUNT_PIC; npic++)
        {
          menuPic[npic].visible = false;
+
+         menuPic[npic].x = 900;
+
+         menuPic[npic].image = txLoadImage (menuPic[npic].adress.c_str());
 
          menuPic[npic].w = get_w(menuPic[npic].adress);
          menuPic[npic].h = get_h(menuPic[npic].adress);
@@ -172,18 +162,12 @@ int main()
          menuPic[npic].w_scr = menuPic[npic].w / 3;
          menuPic[npic].h_scr = menuPic[npic].h / 3;
 
-
-         menuPic[npic].image = txLoadImage (menuPic[npic].adress.c_str());
-
-         int pos_1 = menuPic[npic].adress.find("/");
-         int pos_2 = menuPic[npic].adress.find("/", pos_1+1);
-
-         menuPic[npic].category = menuPic[npic].adress.substr(pos_1+1, pos_2-pos_1-1);
-
+        int pos_1 = menuPic[npic].adress.find("/");
+        int pos_2 = menuPic[npic].adress.find("/", pos_1+1);
+        menuPic[npic].category = menuPic[npic].adress.substr(pos_1+1, pos_2-pos_1-1);
        }
 
-         //центральные картинки
-        Pictures centralPic[1000];
+
 
 
     while(!GetAsyncKeyState(VK_ESCAPE))
@@ -279,6 +263,72 @@ int main()
           if(GetAsyncKeyState(VK_UP)) centralPic[vybor].y -= 5;
           if(GetAsyncKeyState(VK_DOWN)) centralPic[vybor].y += 5;
         }
+
+        //Сохранение
+         if(click(btn[BTN_SAVE]))
+         {
+            string fileName = "1.txt";
+            if (fileName != "")
+            {
+                ofstream fout;
+                fout.open(fileName);
+
+                for (int npic = 0; npic < COUNT_PIC; npic++)
+                {
+                    if (centralPic[npic].visible)
+                    {
+                     fout << centralPic[npic].x << endl;
+                     fout << centralPic[npic].y << endl;
+                     fout << centralPic[npic].adress << endl;
+                    }
+                }
+                fout.close();
+
+                txMessageBox("Сохранено", "Спасибо", MB_ICONINFORMATION);
+            }
+         }
+
+        //Загрузка
+
+        if (click(btn[BTN_LOAD]))
+        {
+
+            string fileName = "1.txt";
+            if(fileName != "")
+            {
+              for (int npic = 0; npic < COUNT_PIC; npic++)
+              {
+                centralPic[npic].visible = false;
+              }
+
+              char buff[50];
+              ifstream fin(fileName);
+
+              while (fin.good())
+              {
+                    fin.getline(buff, 50);
+                    int x = atoi(buff);
+                    fin.getline(buff,50);
+                    int y = atoi(buff);
+                    fin.getline(buff, 50);
+                    string adress = (buff);
+
+                    for (int npic = 0; npic < COUNT_PIC; npic++)
+                    {
+
+                        if(centralPic[npic].adress == adress)
+                        {
+                         centralPic[npic].x = x;
+                         centralPic[npic].y = y;
+                         centralPic[npic].visible = true;
+
+                        }
+                    }
+               }
+
+               fin.close();
+            }
+         }
 
 
 
