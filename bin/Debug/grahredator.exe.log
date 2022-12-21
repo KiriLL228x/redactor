@@ -4893,3 +4893,120 @@ Run file:	C:\redactor-main\bin\Debug\grahredator.exe
 Directory:	C:\redactor-main
 
 --------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\redactor-main\bin\Debug\grahredator.exe, файл: c:\codsb\codeblocks\mingw\include\txlib.h, строка: 13665, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004FA2FC (32-bit), Flags: CMdRE0, Thread: 0x217C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00416F73 in C:\redactor-main\bin\Debug\grahredator.exe: txBitBlt() at c:/codsb/codeblocks/mingw/include/txlib.h (13665)
+
+# 1 0x0041EA4B in C:\redactor-main\bin\Debug\grahredator.exe: main() at C:/redactor-main/main.cpp (234):
+
+    232:         txSetColor(TX_WHITE,3);
+    233:         txSetFillColor(TX_BLACK);
+=>  234:         txBitBlt(txDC(), 0, 0, 1800, 900, menufon);
+    235:         //кнопка для старта
+    236:         txRectangle(500,100,700,150);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Dec 21 2022 14:55:42, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Dec 21 2022 14:55:46
+
+Run file:	C:\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\redactor-main\bin\Debug\grahredator.exe, файл: c:\codsb\codeblocks\mingw\include\txlib.h, строка: 13665, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004FA2FC (32-bit), Flags: CMdRE0, Thread: 0x217C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00416F73 in C:\redactor-main\bin\Debug\grahredator.exe: txBitBlt() at c:/codsb/codeblocks/mingw/include/txlib.h (13665)
+
+# 1 0x0041EA4B in C:\redactor-main\bin\Debug\grahredator.exe: main() at C:/redactor-main/main.cpp (234):
+
+    232:         txSetColor(TX_WHITE,3);
+    233:         txSetFillColor(TX_BLACK);
+=>  234:         txBitBlt(txDC(), 0, 0, 1800, 900, menufon);
+    235:         //кнопка для старта
+    236:         txRectangle(500,100,700,150);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Dec 21 2022 14:55:42, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Dec 21 2022 14:55:46
+
+Run file:	C:\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\redactor-main
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\redactor-main\bin\Debug\grahredator.exe, файл: c:\codsb\codeblocks\mingw\include\txlib.h, строка: 13665, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#3: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004FA2FC (32-bit), Flags: CMdRE0, Thread: 0x217C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00416F73 in C:\redactor-main\bin\Debug\grahredator.exe: txBitBlt() at c:/codsb/codeblocks/mingw/include/txlib.h (13665)
+
+# 1 0x0041EA4B in C:\redactor-main\bin\Debug\grahredator.exe: main() at C:/redactor-main/main.cpp (234):
+
+    232:         txSetColor(TX_WHITE,3);
+    233:         txSetFillColor(TX_BLACK);
+=>  234:         txBitBlt(txDC(), 0, 0, 1800, 900, menufon);
+    235:         //кнопка для старта
+    236:         txRectangle(500,100,700,150);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Dec 21 2022 14:55:42, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Dec 21 2022 14:55:46
+
+Run file:	C:\redactor-main\bin\Debug\grahredator.exe
+Directory:	C:\redactor-main
+
+--------------------------------------------------

@@ -1,0 +1,9 @@
+250
+200
+img/Стены/Wall_A_02.bmp
+250
+350
+img/Стены/Wall_B_02.bmp
+325
+295
+img/Окна/Stone_Window_03.bmp

@@ -111,19 +111,68 @@ const int COUNT_BTN = 8;
 const int BTN_SAVE = COUNT_BTN - 1;
 const int BTN_LOAD = COUNT_BTN - 2;
 
+string runFileDialog(bool isSave)
+{
+        string fileName = "";
+
+        OPENFILENAME ofn;
+        TCHAR szFile[260] = { 0 };
+
+        //
+        ZeroMemory(&ofn, sizeof(ofn));
+        ofn.lStructSize = sizeof(ofn);
+        ofn.hwndOwner = txWindow();
+        ofn.lpstrFile = szFile;
+        ofn.nMaxFile = sizeof(szFile);
+        ofn.lpstrFilter = ("Text\0*.TXT\0");
+        ofn.nFilterIndex = 1;
+        ofn.lpstrInitialDir = NULL;
+        ofn.nMaxFileTitle = 0;
+        ofn.lpstrInitialDir = NULL;
+        ofn.Flags = OFN_PATHMUSTEXIST | OFN_FILEMUSTEXIST;
+
+        if (isSave)
+        {
+            if (GetSaveFileName(&ofn) == TRUE)
+            {
+                fileName = ofn.lpstrFile;
+
+                if (fileName.find(".txt") > 1000)
+                {
+                    fileName = fileName + ".txt";
+                }
+            }
+        }
+        else
+        {
+                if (GetOpenFileName(&ofn) == TRUE)
+                {
+                    fileName = ofn.lpstrFile;
+                }
+        }
+
+        return fileName;
+
+}
+
+
+
 int main()
 {
-    txCreateWindow (1200, 800);
+    txCreateWindow (1800, 900);
     txDisableAutoPause();
     txTextCursor (false);
 
-    HDC Fon3 = txLoadImage("img/fon3.bmp");
+    HDC Fon1 = txLoadImage("img/fon1.bmp");
+    HDC menufon = txLoadImage("img/fon3.bmp");
 
     int COUNT_BTN = 8;
     int COUNT_PIC = 0;
     int vybor = -1;
     int nCentralPic = 0;
     bool mouse_free = false;
+    string PAGE = "Меню";
+
 
     //Массив
         Button btn[COUNT_BTN];
@@ -152,7 +201,7 @@ int main()
        {
          menuPic[npic].visible = false;
 
-         menuPic[npic].x = 900;
+         menuPic[npic].x = 1600;
 
          menuPic[npic].image = txLoadImage (menuPic[npic].adress.c_str());
 
@@ -170,12 +219,83 @@ int main()
 
 
 
-    while(!GetAsyncKeyState(VK_ESCAPE))
+    while(true)
+{
+    txClear();
+
+
+
+
+    if(PAGE=="Меню")
+    {
+
+        txSetColor(TX_WHITE,3);
+        txSetFillColor(TX_BLACK);
+        txBitBlt(txDC(), 0, 0, 1800, 900, menufon);
+        //кнопка для старта
+        txRectangle(500,100,700,150);
+        txDrawText(500,100,700,150, "START");
+        //нажатие на кнопку старт
+        if(txMouseX() >= 500 && txMouseY()>=100 &&
+           txMouseX() <= 700 && txMouseY()<=150 &&
+            txMouseButtons() == 1)
+        {
+            PAGE="start";
+        }
+
+        //кнопка ПОМОЩЬ
+        txRectangle(500,200,700,250);
+        txDrawText(500,200,700,250, "HELP");
+        //нажатие на кнопку старт
+        if(txMouseX() >= 500 && txMouseY()>=200 &&
+        txMouseX() <= 700 && txMouseY()<=250 &&
+        txMouseButtons() == 1)
+        {
+            PAGE="help";
+        }
+
+        //кнопка Exit
+        txRectangle(500,500,700,550);
+        txDrawText(500,500,700,550, "EXIT");
+        //нажатие на кнопку выхода
+        if(txMouseX() >= 500 && txMouseY()>=500 &&
+        txMouseX() <= 700 && txMouseY()<=550 &&
+        txMouseButtons() == 1)
+        {
+            return 0;
+        }
+
+    }
+
+    if(PAGE=="help")
+    {
+        txSetColor(TX_WHITE,3);
+        txSetFillColor(TX_BLACK);
+
+        txRectangle(100,200,300,250);
+        txDrawText(100,200,300,250, "BACK");
+        //нажатие на кнопку старт
+        if(txMouseX() >= 100 && txMouseY()>=200 &&
+        txMouseX() <= 300 && txMouseY()<=250 &&
+        txMouseButtons() == 1)
+        {
+            PAGE="Меню";
+        }
+
+        txSelectFont("Arial",25);
+        txDrawText(300,100,900,600,"Управление:\n"
+                                "лкм - выбрать постройку,\n"
+                                "up,down,left,right - передвинуть"
+        );
+    }
+
+
+
+    if(PAGE=="start")
     {
         txBegin();
         txSetColor(TX_WHITE);
-        txClear();
-        txBitBlt(txDC(), 0, 0, 1200, 900, Fon3);
+        txBitBlt(txDC(), 0, 0, 1800, 900, Fon1);
 
         //Рисование кнопок
         for(int nk=0; nk<COUNT_BTN; nk++)
@@ -258,16 +378,18 @@ int main()
         // передвижение выбраной центральной картинки
        if(vybor>=0)
         {
-          if(GetAsyncKeyState(VK_RIGHT)) centralPic[vybor].x += 5;
-          if(GetAsyncKeyState(VK_LEFT)) centralPic[vybor].x -= 5;
-          if(GetAsyncKeyState(VK_UP)) centralPic[vybor].y -= 5;
-          if(GetAsyncKeyState(VK_DOWN)) centralPic[vybor].y += 5;
+          if(GetAsyncKeyState(VK_RIGHT)) centralPic[vybor].x += 10;
+          if(GetAsyncKeyState(VK_LEFT)) centralPic[vybor].x -= 10;
+          if(GetAsyncKeyState(VK_UP)) centralPic[vybor].y -= 10;
+          if(GetAsyncKeyState(VK_DOWN)) centralPic[vybor].y += 10;
         }
 
         //Сохранение
-         if(click(btn[BTN_SAVE]))
+
+
+     if(click(btn[BTN_SAVE]))
          {
-            string fileName = "1.txt";
+            string fileName = runFileDialog(true);
             if (fileName != "")
             {
                 ofstream fout;
@@ -293,7 +415,7 @@ int main()
         if (click(btn[BTN_LOAD]))
         {
 
-            string fileName = "1.txt";
+            string fileName = runFileDialog(false);
             if(fileName != "")
             {
               for (int npic = 0; npic < COUNT_PIC; npic++)
@@ -318,9 +440,19 @@ int main()
 
                         if(centralPic[npic].adress == adress)
                         {
-                         centralPic[npic].x = x;
-                         centralPic[npic].y = y;
-                         centralPic[npic].visible = true;
+                          centralPic[nCentralPic] = {
+                                            menuPic[npic].x = x,
+                                            menuPic[npic].y = y,
+                                            menuPic[npic].adress,
+                                            menuPic[npic].w,
+                                            menuPic[npic].h,
+                                            menuPic[npic].image,
+                                            menuPic[npic].w,
+                                            menuPic[npic].h,
+                                            menuPic[npic].category,
+                                            menuPic[npic].visible = true
+                                          };
+                         nCentralPic++;
 
                         }
                     }
@@ -329,6 +461,12 @@ int main()
                fin.close();
             }
          }
+
+
+
+
+
+
 
 
 
@@ -341,11 +479,12 @@ int main()
             mouse_free = true;
         }
 
-
-        txSleep(50);
         txEnd();
+}
+        txSleep(50);
 
-        }
+
+}
 
             for(int npic=0; npic < COUNT_PIC; npic++)
             {
