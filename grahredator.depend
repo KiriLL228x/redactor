@@ -20,3 +20,12 @@
 	<stdio.h>
 	<stdlib.h>
 
+1671808422 source:d:\корнилов кирилл\grahredator\main.cpp
+	"TXLib.h"
+	<iostream>
+	<fstream>
+	"dirent.h"
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+

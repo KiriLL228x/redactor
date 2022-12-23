@@ -99,7 +99,7 @@ int readFromDir(string adress, Pictures menuPic[], int COUNT_PIC)
             menuPic[COUNT_PIC].y = lastY;
             menuPic[COUNT_PIC].adress = adress + (string)ent->d_name;
             COUNT_PIC ++;
-            lastY +=50;
+            lastY +=80;
         }
       }
       closedir (dir);
@@ -107,9 +107,6 @@ int readFromDir(string adress, Pictures menuPic[], int COUNT_PIC)
     return COUNT_PIC;
 }
 
-const int COUNT_BTN = 8;
-const int BTN_SAVE = COUNT_BTN - 1;
-const int BTN_LOAD = COUNT_BTN - 2;
 
 string runFileDialog(bool isSave)
 {
@@ -155,18 +152,21 @@ string runFileDialog(bool isSave)
 
 }
 
+const int COUNT_BTN = 9;
+const int BTN_SAVE = COUNT_BTN - 1;
+const int BTN_LOAD = COUNT_BTN - 2;
 
 
 int main()
 {
-    txCreateWindow (1800, 900);
+    txCreateWindow (1500, 800);
     txDisableAutoPause();
     txTextCursor (false);
 
     HDC Fon1 = txLoadImage("img/fon1.bmp");
     HDC menufon = txLoadImage("img/fon3.bmp");
+    HDC fonhelp = txLoadImage("img/fonhelp.bmp");
 
-    int COUNT_BTN = 8;
     int COUNT_PIC = 0;
     int vybor = -1;
     int nCentralPic = 0;
@@ -182,8 +182,9 @@ int main()
         btn[3] = {540,30,"Окна","Окна"};
         btn[4] = {710,30,"Двери","Двери"};
         btn[5] = {880,30,"Декор","Декор"};
-        btn[6] = {1050,30,"Загрузить",""};
-        btn[7] = {1050,80,"Сохранить",""};
+        btn[6] = {1050,30,"Декор2","Декор2"};
+        btn[7] = {1220,30,"Загрузить",""};
+        btn[8] = {1220,80,"Сохранить",""};
 
         //картинок меню
         Pictures menuPic[1000];
@@ -196,24 +197,46 @@ int main()
         COUNT_PIC = readFromDir("img/Двери/", menuPic, COUNT_PIC);
         COUNT_PIC = readFromDir("img/Земля/", menuPic, COUNT_PIC);
         COUNT_PIC = readFromDir("img/Декор/", menuPic, COUNT_PIC);
+        COUNT_PIC = readFromDir("img/Декор2/", menuPic, COUNT_PIC);
 
        for(int npic=0; npic < COUNT_PIC; npic++)
        {
          menuPic[npic].visible = false;
 
-         menuPic[npic].x = 1600;
+         menuPic[npic].x = 1400;
+
+
 
          menuPic[npic].image = txLoadImage (menuPic[npic].adress.c_str());
 
          menuPic[npic].w = get_w(menuPic[npic].adress);
          menuPic[npic].h = get_h(menuPic[npic].adress);
 
-         menuPic[npic].w_scr = menuPic[npic].w / 3;
-         menuPic[npic].h_scr = menuPic[npic].h / 3;
-
         int pos_1 = menuPic[npic].adress.find("/");
         int pos_2 = menuPic[npic].adress.find("/", pos_1+1);
         menuPic[npic].category = menuPic[npic].adress.substr(pos_1+1, pos_2-pos_1-1);
+
+         if(menuPic[npic].category == "Стены" || menuPic[npic].category == "Двери" ||
+          menuPic[npic].category == "Декор" || menuPic[npic].category == "Декор2" )
+         {
+             menuPic[npic].w_scr = menuPic[npic].w / 4;
+             menuPic[npic].h_scr = menuPic[npic].h / 4;
+         }
+         else
+         {
+             menuPic[npic].w_scr = menuPic[npic].w / 2;
+             menuPic[npic].h_scr = menuPic[npic].h / 2;
+         }
+         if(menuPic[npic].category == "Крыша" )
+         {
+          menuPic[npic].w_scr = menuPic[npic].w / 5;
+          menuPic[npic].h_scr = menuPic[npic].h / 5;
+         }
+         else
+         {
+             menuPic[npic].w_scr = menuPic[npic].w / 2;
+             menuPic[npic].h_scr = menuPic[npic].h / 2;
+         }
        }
 
 
@@ -233,7 +256,7 @@ int main()
         txSetFillColor(TX_BLACK);
         txBitBlt(txDC(), 0, 0, 1800, 900, menufon);
         //кнопка для старта
-        txRectangle(500,100,700,150);
+         Win32::RoundRect (txDC(), 500, 100, 700, 150, 30, 30);
         txDrawText(500,100,700,150, "START");
         //нажатие на кнопку старт
         if(txMouseX() >= 500 && txMouseY()>=100 &&
@@ -244,7 +267,7 @@ int main()
         }
 
         //кнопка ПОМОЩЬ
-        txRectangle(500,200,700,250);
+       Win32::RoundRect (txDC(),500,200,700,250,30,30);
         txDrawText(500,200,700,250, "HELP");
         //нажатие на кнопку старт
         if(txMouseX() >= 500 && txMouseY()>=200 &&
@@ -269,12 +292,13 @@ int main()
 
     if(PAGE=="help")
     {
-        txSetColor(TX_WHITE,3);
-        txSetFillColor(TX_BLACK);
 
+        txSetColor(TX_BLACK,6);
+        txSetFillColor(TX_BLACK);
+        txBitBlt(txDC(), 0, 0, 1800, 900, fonhelp);
         txRectangle(100,200,300,250);
         txDrawText(100,200,300,250, "BACK");
-        //нажатие на кнопку старт
+        //нажатие на кнопку BACK
         if(txMouseX() >= 100 && txMouseY()>=200 &&
         txMouseX() <= 300 && txMouseY()<=250 &&
         txMouseButtons() == 1)
@@ -295,7 +319,7 @@ int main()
     {
         txBegin();
         txSetColor(TX_WHITE);
-        txBitBlt(txDC(), 0, 0, 1800, 900, Fon1);
+        txBitBlt(txDC(), 0, 0, 1500, 800, Fon1);
 
         //Рисование кнопок
         for(int nk=0; nk<COUNT_BTN; nk++)
@@ -378,10 +402,10 @@ int main()
         // передвижение выбраной центральной картинки
        if(vybor>=0)
         {
-          if(GetAsyncKeyState(VK_RIGHT)) centralPic[vybor].x += 10;
-          if(GetAsyncKeyState(VK_LEFT)) centralPic[vybor].x -= 10;
-          if(GetAsyncKeyState(VK_UP)) centralPic[vybor].y -= 10;
-          if(GetAsyncKeyState(VK_DOWN)) centralPic[vybor].y += 10;
+          if(GetAsyncKeyState(VK_RIGHT)) centralPic[vybor].x += 14;
+          if(GetAsyncKeyState(VK_LEFT)) centralPic[vybor].x -= 14;
+          if(GetAsyncKeyState(VK_UP)) centralPic[vybor].y -= 14;
+          if(GetAsyncKeyState(VK_DOWN)) centralPic[vybor].y += 14;
         }
 
         //Сохранение
@@ -438,11 +462,11 @@ int main()
                     for (int npic = 0; npic < COUNT_PIC; npic++)
                     {
 
-                        if(centralPic[npic].adress == adress)
+                        if(menuPic[npic].adress == adress)
                         {
                           centralPic[nCentralPic] = {
-                                            menuPic[npic].x = x,
-                                            menuPic[npic].y = y,
+                                            x,
+                                            y,
                                             menuPic[npic].adress,
                                             menuPic[npic].w,
                                             menuPic[npic].h,
@@ -450,15 +474,15 @@ int main()
                                             menuPic[npic].w,
                                             menuPic[npic].h,
                                             menuPic[npic].category,
-                                            menuPic[npic].visible = true
+                                            true
                                           };
                          nCentralPic++;
 
                         }
                     }
                }
-            txMessageBox("Загружено", "Спасибо", MB_ICONINFORMATION);
-               fin.close();
+            //txMessageBox("Загружено", "Спасибо", MB_ICONINFORMATION);
+            fin.close();
             }
          }
 

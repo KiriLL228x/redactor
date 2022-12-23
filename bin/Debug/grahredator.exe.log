@@ -5010,3 +5010,219 @@ Run file:	C:\redactor-main\bin\Debug\grahredator.exe
 Directory:	C:\redactor-main
 
 --------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe, файл: c:\codsb\codeblocks\mingw\include\txlib.h, строка: 13122, функция: POINT {anonymous}::TX::txGetExtent(HDC),
+
+Сообщение: Обнаружен нулевой или ложный результат.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400], Instance: 0x004FA2FC (32-bit), Flags: CMdrE0, Thread: 0x2BA8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-10-03 23:49:44 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codsb\codeblocks\mingw\include\txlib.h
+Compiled:	Dec 21 2022 15:04:15, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Dec 21 2022 18:03:05
+
+Run file:	D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe
+Directory:	D:\Корнилов Кирилл\grahredator
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004445DC в функции _M_is_leaked() в файле c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F92FC (32-bit), Flags: CMdRE0, Thread: 0x151C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004445DC in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004734EB in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: swap() at c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047A7E9 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: operator=() at c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043EBD9 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: operator=() at c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041D587 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: main() at D:/Корнилов Кирилл/grahredator/main.cpp (187):
+
+    185:         btn[6] = {880,80,"Декор2","Декор№2"};
+    186:         btn[7] = {1050,30,"Загрузить",""};
+=>  187:         btn[8] = {1050,80,"Сохранить",""};
+    188: 
+    189:         //картинок меню
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Dec 21 2022 18:57:50, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Dec 21 2022 18:58:10
+
+Run file:	D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe
+Directory:	D:\Корнилов Кирилл\grahredator
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x004445DC в функции _M_is_leaked() в файле c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h на строке 45. Попытка прочесть данные по адресу 0xFFFFFFFC в модуле D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F92FC (32-bit), Flags: CMdRE0, Thread: 0x151C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004445DC in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: _M_is_leaked() at c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 1 0x004734EB in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: swap() at c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 2 0x0047A7E9 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: operator=() at c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 3 0x0043EBD9 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: operator=() at c:/codeblocks/codeblocks/mingw/include/c++/4.8.1/debug/functions.h (45):
+
+     43:   // An arbitrary iterator pointer is not singular.
+     44:   inline bool
+=>   45:   __check_singular_aux(const void*) { return false; }
+     46: 
+     47:   // We may have an iterator that derives from _Safe_iterator_base but isn't
+
+# 4 0x0041D587 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: main() at D:/Корнилов Кирилл/grahredator/main.cpp (187):
+
+    185:         btn[6] = {880,80,"Декор2","Декор№2"};
+    186:         btn[7] = {1050,30,"Загрузить",""};
+=>  187:         btn[8] = {1050,80,"Сохранить",""};
+    188: 
+    189:         //картинок меню
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Dec 21 2022 18:57:50, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Dec 21 2022 18:58:10
+
+Run file:	D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe
+Directory:	D:\Корнилов Кирилл\grahredator
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13628, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x004F92FC (32-bit), Flags: CMdRE0, Thread: 0x5B4 (Main), GetLastError(): 13 (Недопустимые данные), errno: 2 (No such file or directory). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00416409 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: txBitBlt() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13628)
+
+# 1 0x0041DFA4 in D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe: main() at D:/Корнилов Кирилл/grahredator/main.cpp (257):
+
+    255:         txSetColor(TX_WHITE,3);
+    256:         txSetFillColor(TX_BLACK);
+=>  257:         txBitBlt(txDC(), 0, 0, 1800, 900, menufon);
+    258:         //кнопка для старта
+    259:          Win32::RoundRect (txDC(), 500, 100, 700, 150, 30, 30);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Dec 23 2022 19:11:24, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Dec 23 2022 19:14:27
+
+Run file:	D:\Корнилов Кирилл\grahredator\bin\Debug\grahredator.exe
+Directory:	D:\Корнилов Кирилл\grahredator\bin\Debug
+
+--------------------------------------------------
