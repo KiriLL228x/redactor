@@ -99,7 +99,7 @@ int readFromDir(string adress, Pictures menuPic[], int COUNT_PIC)
             menuPic[COUNT_PIC].y = lastY;
             menuPic[COUNT_PIC].adress = adress + (string)ent->d_name;
             COUNT_PIC ++;
-            lastY +=80;
+            lastY +=70;
         }
       }
       closedir (dir);
@@ -216,18 +216,9 @@ int main()
         int pos_2 = menuPic[npic].adress.find("/", pos_1+1);
         menuPic[npic].category = menuPic[npic].adress.substr(pos_1+1, pos_2-pos_1-1);
 
-         if(menuPic[npic].category == "Стены" || menuPic[npic].category == "Двери" ||
-          menuPic[npic].category == "Декор" || menuPic[npic].category == "Декор2" )
-         {
-             menuPic[npic].w_scr = menuPic[npic].w / 4;
-             menuPic[npic].h_scr = menuPic[npic].h / 4;
-         }
-         else
-         {
-             menuPic[npic].w_scr = menuPic[npic].w / 2;
-             menuPic[npic].h_scr = menuPic[npic].h / 2;
-         }
-         if(menuPic[npic].category == "Крыша" )
+
+
+         if(menuPic[npic].category == "Крыша" || menuPic[npic].category == "Стены" || menuPic[npic].category == "Двери" ||  menuPic[npic].category == "Декор" || menuPic[npic].category == "Декор2")
          {
           menuPic[npic].w_scr = menuPic[npic].w / 5;
           menuPic[npic].h_scr = menuPic[npic].h / 5;
@@ -256,33 +247,33 @@ int main()
         txSetFillColor(TX_BLACK);
         txBitBlt(txDC(), 0, 0, 1800, 900, menufon);
         //кнопка для старта
-         Win32::RoundRect (txDC(), 500, 100, 700, 150, 30, 30);
-        txDrawText(500,100,700,150, "START");
+         Win32::RoundRect (txDC(), 200, 150, 400, 200, 30, 30);
+        txDrawText(200,150,400,200, "START");
         //нажатие на кнопку старт
-        if(txMouseX() >= 500 && txMouseY()>=100 &&
-           txMouseX() <= 700 && txMouseY()<=150 &&
+        if(txMouseX() >= 200 && txMouseY()>= 150 &&
+           txMouseX() <= 400 && txMouseY()<= 200 &&
             txMouseButtons() == 1)
         {
             PAGE="start";
         }
 
         //кнопка ПОМОЩЬ
-       Win32::RoundRect (txDC(),500,200,700,250,30,30);
-        txDrawText(500,200,700,250, "HELP");
+       Win32::RoundRect (txDC(),200,250,400,300,30,30);
+        txDrawText(200,250,400,300, "HELP");
         //нажатие на кнопку старт
-        if(txMouseX() >= 500 && txMouseY()>=200 &&
-        txMouseX() <= 700 && txMouseY()<=250 &&
+        if(txMouseX() >= 200 && txMouseY()>= 250 &&
+        txMouseX() <= 400 && txMouseY()<= 300 &&
         txMouseButtons() == 1)
         {
             PAGE="help";
         }
 
         //кнопка Exit
-        txRectangle(500,500,700,550);
-        txDrawText(500,500,700,550, "EXIT");
+        txRectangle(200,550,400,600);
+        txDrawText(200,550,400,600, "EXIT");
         //нажатие на кнопку выхода
-        if(txMouseX() >= 500 && txMouseY()>=500 &&
-        txMouseX() <= 700 && txMouseY()<=550 &&
+        if(txMouseX() >= 200 && txMouseY()>= 550 &&
+        txMouseX() <= 400 && txMouseY()<= 600 &&
         txMouseButtons() == 1)
         {
             return 0;
@@ -293,7 +284,7 @@ int main()
     if(PAGE=="help")
     {
 
-        txSetColor(TX_BLACK,6);
+        txSetColor(TX_WHITE,5);
         txSetFillColor(TX_BLACK);
         txBitBlt(txDC(), 0, 0, 1800, 900, fonhelp);
         txRectangle(100,200,300,250);
